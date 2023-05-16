@@ -8,16 +8,15 @@ datasource db {
 }
 
 model Category {
-  id             Int              @id @default(autoincrement())
-  categoryName   String           @unique
-  creationDate   DateTime         @default(now())
-  Recommendation Recommendation[]
+  id   Int    @id @default(autoincrement())
+  name String @unique
+  Tool Tool[]
 }
 
 model Environment {
-  id             Int              @id @default(autoincrement())
-  name           String
-  Recommendation Recommendation[]
+  id   Int    @id @default(autoincrement())
+  name String
+  Tool Tool[]
 }
 
 model Feedback {
@@ -40,79 +39,79 @@ model Log {
   @@index([userId], map: "Log_userId_fkey")
 }
 
-model Recommendation {
-  id                                  Int                    @id @default(autoincrement())
-  preUpVote                           Int                    @default(0)
-  approval                            Boolean                @default(true)
-  priceModel                          String                 @default("FREE VERSION")
-  price                               Float                  @default(0)
-  toolUrl                             String                 @unique
-  toolName                            String                 @unique
-  description                         String                 @db.Text
-  icon                                String?
-  image                               String?
-  creatorId                           Int
-  creationDate                        DateTime               @default(now())
-  updateDate                          DateTime               @default(now())
-  synced                              Boolean                @default(true)
-  User_Recommendation_creatorIdToUser User                   @relation("Recommendation_creatorIdToUser", fields: [creatorId], references: [id])
-  RecommendationUpvote                RecommendationUpvote[]
-  Review                              Review[]
-  Category                            Category[]
-  Environment                         Environment[]
-  Tag                                 Tag[]
-  User_userBookmarks                  User[]                 @relation("userBookmarks")
+model Tool {
+  id           Int           @id @default(autoincrement())
+  preUpVote    Int           @default(0)
+  approval     Boolean       @default(true)
+  priceModel   String        @default("FREE VERSION")
+  price        Float         @default(0)
+  toolUrl      String        @unique
+  toolName     String        @unique
+  description  String        @db.Text
+  icon         String?
+  image        String?
+  synced       Boolean       @default(true)
+  ToolUpvote   ToolUpvote[]
+  Review       Review[]
+  Category     Category[]
+  Environment  Environment[]
+  Tag          Tag[]
+  bookmarkedBy User[]        @relation("userBookmarks")
+  creator      User          @relation(fields: [creatorId], references: [id])
+  creatorId    Int
+  creationDate DateTime      @default(now())
+  updatedAt    DateTime      @default(now())
 
-  @@index([creatorId], map: "Recommendation_creatorId_fkey")
+  @@index([creatorId], map: "Tool_creatorId_fkey")
 }
 
-model RecommendationUpvote {
-  id               Int             @id @default(autoincrement())
-  upvoterId        Int
-  recommendationId Int?
-  creationDate     DateTime        @default(now())
-  Recommendation   Recommendation? @relation(fields: [recommendationId], references: [id])
-  User             User            @relation(fields: [upvoterId], references: [id])
+model ToolUpvote {
+  id           Int      @id @default(autoincrement())
+  upvoterId    Int
+  ToolId       Int?
+  creationDate DateTime @default(now())
+  Tool         Tool?    @relation(fields: [ToolId], references: [id])
+  User         User     @relation(fields: [upvoterId], references: [id])
 
-  @@index([recommendationId], map: "RecommendationUpvote_recommendationId_fkey")
-  @@index([upvoterId], map: "RecommendationUpvote_upvoterId_fkey")
+  @@index([ToolId], map: "ToolUpvote_ToolId_fkey")
+  @@index([upvoterId], map: "ToolUpvote_upvoterId_fkey")
 }
 
 model Review {
-  id             Int            @id @default(autoincrement())
-  review         Json
-  creatorId      Int
-  toolId         Int
-  User           User           @relation(fields: [creatorId], references: [id])
-  Recommendation Recommendation @relation(fields: [toolId], references: [id])
+  id        Int  @id @default(autoincrement())
+  review    Json
+  creatorId Int
+  toolId    Int
+  User      User @relation(fields: [creatorId], references: [id])
+  Tool      Tool @relation(fields: [toolId], references: [id])
 
   @@index([creatorId], map: "Review_creatorId_fkey")
   @@index([toolId], map: "Review_toolId_fkey")
 }
 
 model Tag {
-  id             Int              @id @default(autoincrement())
-  tagName        String           @unique
-  creationDate   DateTime         @default(now())
-  Recommendation Recommendation[]
+  id           Int      @id @default(autoincrement())
+  tagName      String   @unique
+  creationDate DateTime @default(now())
+  Tool         Tool[]
 }
 
 model User {
-  id                                            Int                    @id @default(autoincrement())
-  email                                         String                 @unique
-  password                                      String
-  name                                          String
-  profileImage                                  String                 @db.Text
-  biography                                     String                 @db.Text
-  role                                          String
-  softDelete                                    Boolean                @default(false)
-  creationDate                                  DateTime               @default(now())
-  lastUpdated                                   DateTime               @default(now())
-  Log                                           Log[]
-  Recommendation_Recommendation_creatorIdToUser Recommendation[]       @relation("Recommendation_creatorIdToUser")
-  RecommendationUpvote                          RecommendationUpvote[]
-  Review                                        Review[]
-  Recommendation_userBookmarks                  Recommendation[]       @relation("userBookmarks")
+  id              Int          @id @default(autoincrement())
+  email           String       @unique
+  password        String
+  name            String
+  profileImage    String       @db.Text
+  biography       String       @db.Text
+  role            String
+  softDelete      Boolean      @default(false)
+  creationDate    DateTime     @default(now())
+  lastUpdated     DateTime     @default(now())
+  Log             Log[]
+  tools           Tool[]
+  ToolUpvote      ToolUpvote[]
+  Review          Review[]
+  bookmarkedTools Tool[]       @relation("userBookmarks")
 }
 
 enum Log_action {
