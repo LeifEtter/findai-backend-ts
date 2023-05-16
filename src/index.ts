@@ -3,6 +3,7 @@ import * as dotenv from "dotenv";
 dotenv.config();
 import cors from "cors";
 import express from "express";
+import morgan from "morgan";
 
 const port = process.env.PORT;
 
@@ -13,12 +14,17 @@ const corsOptions: cors.CorsOptions = {
 
 const app: express.Application = express();
 
-app.use(cors(corsOptions));
+app.set("trust proxy", true); //TODO Make line more secure
 
-export const server = http.createServer((req, res) => {
-  res.writeHead(200, { "Content-Type": "application/json" });
-  res.end(JSON.stringify({ data: "Working" }));
+app.use(express.json({ limit: "10mb" }));
+app.use(cors(corsOptions));
+app.use(morgan("dev"));
+
+app.get("/", (req, res) => {
+  res.send("Working");
 });
+
+export const server = http.createServer(app);
 
 server.listen(port, () => {
   console.log(`Server Running on Port ${port}`);
