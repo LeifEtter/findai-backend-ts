@@ -1,6 +1,19 @@
 import http from "http";
+import * as dotenv from "dotenv";
+dotenv.config();
+import cors from "cors";
+import express from "express";
 
-const port = 5859;
+const port = process.env.PORT;
+
+const allowedOrigins: string[] = [process.env.CURRENT_URL ?? "*"];
+const corsOptions: cors.CorsOptions = {
+  origin: allowedOrigins,
+};
+
+const app: express.Application = express();
+
+app.use(cors(corsOptions));
 
 export const server = http.createServer((req, res) => {
   res.writeHead(200, { "Content-Type": "application/json" });
