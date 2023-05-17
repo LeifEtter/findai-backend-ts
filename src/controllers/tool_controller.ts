@@ -1,7 +1,8 @@
 import prisma from "../db";
 import * as dotenv from "dotenv";
 import { Request, Response } from "express";
-// import { Response as FetchResponse } from "node-fetch";
+import { AirtableTool } from "../models/airtable_models";
+import { MetaData, getMetaDataForUrl } from "../helpers/scraping";
 dotenv.config();
 
 const unsyncTools = async () => {
@@ -13,9 +14,16 @@ const unsyncTools = async () => {
   }
 };
 
-const getAirtableData = async (): Promise<object[]> => {
+const cleanupUnsyncedTools = async () => {
+  await prisma.tool.deleteMany({
+    where: {
+      synced: false,
+    },
+  });
+};
+
+const getAirtableData = async (): Promise<AirtableTool[]> => {
   try {
-    // TODO Add type to fetch result
     const response = await fetch(process.env.AIRTABLE_URL || "", {
       method: "GET",
       headers: {
@@ -33,21 +41,57 @@ const getAirtableData = async (): Promise<object[]> => {
 const syncAirtable = async (req: Request, res: Response) => {
   try {
     await unsyncTools();
-
-    const tools: object[] = await getAirtableData();
+    const tools: AirtableTool[] = await getAirtableData();
     for (const tool of tools) {
-      console.log(tool);
-      // await prisma.tool.create({
-      //   data: {
-      //     url: tool.link,
-      //     name: tool.title,
-      //     description: tool.description,
-      //   },
-      // });
+      const meta: MetaData = await getMetaDataForUrl(tool.fields.link);
+      const record: object | null = await prisma.tool.findUnique({
+        where: {
+          url: tool.fields.link,
+        },
+      });
+      if (record == null) {
+        await prisma.tool.create({
+          data: {
+            url: tool.fields.link,
+            name: tool.fields.title,
+            description:
+              tool.fields.description || meta.description || "No description",
+            price: tool.fields.price,
+            priceModel: tool.fields.priceModel,
+            approval: tool.fields.approval,
+            tags: {
+              connect: [],
+            },
+            creator: {
+              connect: {
+                id: 1,
+              },
+            },
+            image: meta.image,
+            icon: meta.icon,
+          },
+        });
+      } else {
+        await prisma.tool.update({
+          where: { url: tool.fields.link },
+          data: {
+            url: tool.fields.link,
+            name: tool.fields.title,
+            price: tool.fields.price,
+            priceModel: tool.fields.priceModel,
+            approval: tool.fields.approval,
+            tags: {
+              connect: [],
+            },
+          },
+        });
+      }
     }
-
+    //TODO Implement rescraping if this is passed in query
+    await cleanupUnsyncedTools();
     return res.status(200).send({ message: "Synced Successfully" });
   } catch (error) {
+    console.error(error);
     throw new Error("Couldn't Sync Airtable Data with Database");
   }
 };
