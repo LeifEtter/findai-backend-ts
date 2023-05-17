@@ -43,3 +43,5 @@ const getMetaDataForUrl = async (url: string): Promise<MetaData> => {
     throw new Error("Can't get metadata");
   }
 };
+
+export { getMetaDataForUrl, MetaData };
