@@ -8,15 +8,15 @@ datasource db {
 }
 
 model Category {
-  id   Int    @id @default(autoincrement())
-  name String @unique
-  Tool Tool[]
+  id    Int    @id @default(autoincrement())
+  name  String @unique
+  tools Tool[]
 }
 
 model Environment {
-  id   Int    @id @default(autoincrement())
-  name String
-  Tool Tool[]
+  id    Int    @id @default(autoincrement())
+  name  String
+  tools Tool[]
 }
 
 model Feedback {
@@ -33,29 +33,29 @@ model Log {
   event        String
   message      Json
   userId       Int
+  user         User       @relation(fields: [userId], references: [id])
   creationDate DateTime   @default(now())
-  User         User       @relation(fields: [userId], references: [id])
 
   @@index([userId], map: "Log_userId_fkey")
 }
 
 model Tool {
   id           Int           @id @default(autoincrement())
+  name         String        @unique
+  url          String        @unique
+  description  String        @db.Text
+  icon         String?
+  image        String?
   preUpVote    Int           @default(0)
   approval     Boolean       @default(true)
   priceModel   String        @default("FREE VERSION")
   price        Float         @default(0)
-  toolUrl      String        @unique
-  toolName     String        @unique
-  description  String        @db.Text
-  icon         String?
-  image        String?
   synced       Boolean       @default(true)
-  ToolUpvote   ToolUpvote[]
-  Review       Review[]
-  Category     Category[]
-  Environment  Environment[]
-  Tag          Tag[]
+  upvotes      ToolUpvote[]
+  reviews      Review[]
+  categories   Category[]
+  environments Environment[]
+  tags         Tag[]
   bookmarkedBy User[]        @relation("userBookmarks")
   creator      User          @relation(fields: [creatorId], references: [id])
   creatorId    Int
@@ -67,23 +67,23 @@ model Tool {
 
 model ToolUpvote {
   id           Int      @id @default(autoincrement())
-  upvoterId    Int
-  ToolId       Int?
+  userId       Int
+  toolId       Int?
   creationDate DateTime @default(now())
-  Tool         Tool?    @relation(fields: [ToolId], references: [id])
-  User         User     @relation(fields: [upvoterId], references: [id])
+  tool         Tool?    @relation(fields: [toolId], references: [id])
+  user         User     @relation(fields: [userId], references: [id])
 
-  @@index([ToolId], map: "ToolUpvote_ToolId_fkey")
-  @@index([upvoterId], map: "ToolUpvote_upvoterId_fkey")
+  @@index([toolId], map: "ToolUpvote_toolId_fkey")
+  @@index([userId], map: "ToolUpvote_upvoterId_fkey")
 }
 
 model Review {
   id        Int  @id @default(autoincrement())
-  review    Json
+  content   Json
   creatorId Int
   toolId    Int
-  User      User @relation(fields: [creatorId], references: [id])
-  Tool      Tool @relation(fields: [toolId], references: [id])
+  user      User @relation(fields: [creatorId], references: [id])
+  tool      Tool @relation(fields: [toolId], references: [id])
 
   @@index([creatorId], map: "Review_creatorId_fkey")
   @@index([toolId], map: "Review_toolId_fkey")
@@ -91,9 +91,9 @@ model Review {
 
 model Tag {
   id           Int      @id @default(autoincrement())
-  tagName      String   @unique
+  name         String   @unique
+  tools        Tool[]
   creationDate DateTime @default(now())
-  Tool         Tool[]
 }
 
 model User {
@@ -107,10 +107,10 @@ model User {
   softDelete      Boolean      @default(false)
   creationDate    DateTime     @default(now())
   lastUpdated     DateTime     @default(now())
-  Log             Log[]
+  logs            Log[]
   tools           Tool[]
-  ToolUpvote      ToolUpvote[]
-  Review          Review[]
+  upvotes         ToolUpvote[]
+  reviews         Review[]
   bookmarkedTools Tool[]       @relation("userBookmarks")
 }
 
