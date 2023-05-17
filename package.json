@@ -12,7 +12,9 @@
     "dev": "nodemon src -e ts,json --exec 'npm run local'",
     "lint": "eslint src",
     "format": "npx prettier --write src",
-    "format:check": "npx prettier --check src"
+    "format:check": "npx prettier --check src",
+    "test": "jest --coverage",
+    "text:watch": "jest --watch"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +25,7 @@
     "@types/morgan": "^1.9.4",
     "@types/node": "^20.1.5",
     "@types/node-fetch": "^2.6.4",
+    "@types/supertest": "^2.0.12",
     "@typescript-eslint/eslint-plugin": "^5.59.6",
     "@typescript-eslint/parser": "^5.59.6",
     "eslint": "^8.40.0",
