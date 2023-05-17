@@ -5,6 +5,7 @@ interface AirtableToolFields {
   price: number;
   title: string;
   priceModel: string;
+  description?: string;
 }
 
 interface AirtableTool {
