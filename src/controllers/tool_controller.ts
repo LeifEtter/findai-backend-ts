@@ -3,6 +3,7 @@ import * as dotenv from "dotenv";
 import { Request, Response } from "express";
 import { AirtableTool } from "../models/airtable_models";
 import { MetaData, getMetaDataForUrl } from "../helpers/scraping";
+import { PrismaPromise } from "@prisma/client";
 dotenv.config();
 
 const unsyncTools = async () => {
@@ -96,4 +97,16 @@ const syncAirtable = async (req: Request, res: Response) => {
   }
 };
 
-export { syncAirtable };
+const getSingleToolById = async (req: Request, res: Response) => {
+  try {
+    const tool = await prisma.tool.findUnique({
+      where: { id: parseInt(req.params.id) },
+    });
+    return res.status(200).send(tool);
+  } catch (error) {
+    console.error(error);
+    return res.status(500).send({ message: "Something went wrong " });
+  }
+};
+
+export { syncAirtable, getSingleToolById };
