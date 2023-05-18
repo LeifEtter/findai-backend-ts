@@ -14,7 +14,11 @@
     "format": "npx prettier --write src",
     "format:check": "npx prettier --check src",
     "test": "jest --coverage",
-    "text:watch": "jest --watch"
+    "text:watch": "jest --watch",
+    "prisma-test": "ts-node prisma/test.ts"
+  },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
   },
   "author": "",
   "license": "ISC",
