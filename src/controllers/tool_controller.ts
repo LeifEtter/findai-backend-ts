@@ -3,7 +3,6 @@ import * as dotenv from "dotenv";
 import { Request, Response } from "express";
 import { AirtableTool } from "../models/airtable_models";
 import { MetaData, getMetaDataForUrl } from "../helpers/scraping";
-import { PrismaPromise } from "@prisma/client";
 dotenv.config();
 
 const unsyncTools = async () => {
@@ -61,7 +60,7 @@ const syncAirtable = async (req: Request, res: Response) => {
             priceModel: tool.fields.priceModel,
             approval: tool.fields.approval,
             tags: {
-              connect: [],
+              connect: [{ id: 1 }],
             },
             creator: {
               connect: {
@@ -70,6 +69,7 @@ const syncAirtable = async (req: Request, res: Response) => {
             },
             image: meta.image,
             icon: meta.icon,
+            synced: true,
           },
         });
       } else {
@@ -82,8 +82,13 @@ const syncAirtable = async (req: Request, res: Response) => {
             priceModel: tool.fields.priceModel,
             approval: tool.fields.approval,
             tags: {
-              connect: [],
+              connect: [
+                {
+                  id: 1,
+                },
+              ],
             },
+            synced: true,
           },
         });
       }
@@ -109,4 +114,25 @@ const getSingleToolById = async (req: Request, res: Response) => {
   }
 };
 
-export { syncAirtable, getSingleToolById };
+const getToolsByQuery = async (req: Request, res: Response) => {
+  try {
+    // const tag = req.query.tag;
+    const type = req.query;
+    const tags = ["video", "text", "image"];
+    const result = await prisma.tool.findMany({
+      where: {
+        tags: {
+          some: {
+            OR: tags.map((tag) => ({ name: tag })),
+          },
+        },
+      },
+    });
+    return res.status(200).send({ result });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).send({ message: "Couldn't fulfill query" });
+  }
+};
+
+export { syncAirtable, getSingleToolById, getToolsByQuery };
