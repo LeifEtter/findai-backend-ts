@@ -3,6 +3,10 @@ import * as dotenv from "dotenv";
 import { Request, Response } from "express";
 import { AirtableTool } from "../models/airtable_models";
 import { MetaData, getMetaDataForUrl } from "../helpers/scraping";
+import {
+  convertOrderQueryToOrderObject,
+  convertQueryToList,
+} from "../helpers/conversion";
 dotenv.config();
 
 const unsyncTools = async () => {
@@ -116,18 +120,25 @@ const getSingleToolById = async (req: Request, res: Response) => {
 
 const getToolsByQuery = async (req: Request, res: Response) => {
   try {
-    // const tag = req.query.tag;
-    const type = req.query;
-    const tags = ["video", "text", "image"];
+    const tags = convertQueryToList(req.query.tag);
+    const order: string | undefined = req.query.sort as string | undefined;
+
+    let some: object = {};
+    if (tags.length != 0) {
+      some = { OR: tags.map((tag) => ({ name: tag })) };
+    }
+
+    const orderBy = convertOrderQueryToOrderObject(order);
+
     const result = await prisma.tool.findMany({
       where: {
         tags: {
-          some: {
-            OR: tags.map((tag) => ({ name: tag })),
-          },
+          some,
         },
       },
+      orderBy,
     });
+
     return res.status(200).send({ result });
   } catch (error) {
     console.error(error);
