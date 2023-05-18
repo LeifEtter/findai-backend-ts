@@ -7,7 +7,6 @@ import {
   convertOrderQueryToOrderObject,
   convertQueryToList,
 } from "../helpers/conversion";
-import { Prisma, PrismaClient } from "@prisma/client";
 dotenv.config();
 
 const unsyncTools = async () => {
