@@ -7,6 +7,7 @@ import {
   convertOrderQueryToOrderObject,
   convertQueryToList,
 } from "../helpers/conversion";
+import { Prisma, PrismaClient } from "@prisma/client";
 dotenv.config();
 
 const unsyncTools = async () => {
@@ -146,4 +147,27 @@ const getToolsByQuery = async (req: Request, res: Response) => {
   }
 };
 
-export { syncAirtable, getSingleToolById, getToolsByQuery };
+const deleteSingleToolById = async (req: Request, res: Response) => {
+  try {
+    await prisma.tool
+      .delete({
+        where: { id: parseInt(req.params.id) },
+      })
+      .catch((error) => {
+        if (error.code == "P2025")
+          return res
+            .status(404)
+            .send({ message: "Can't find tool to be deleted" });
+      });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).send({ message: "Couldn't delete tool" });
+  }
+};
+
+export {
+  syncAirtable,
+  getSingleToolById,
+  getToolsByQuery,
+  deleteSingleToolById,
+};
