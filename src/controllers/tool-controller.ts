@@ -7,7 +7,6 @@ import {
   convertOrderQueryToOrderObject,
   convertQueryToList,
 } from "../helpers/conversion";
-import Validation from "../helpers/validation";
 dotenv.config();
 
 const unsyncTools = async () => {
