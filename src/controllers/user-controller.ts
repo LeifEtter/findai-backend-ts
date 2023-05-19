@@ -20,6 +20,8 @@ const getUserProfile = async (req: Request, res: Response) => {
 
 const login = async (req: Request, res: Response) => {
   try {
+    console.log(req.headers.authorization);
+
     return res.status(200).send({ message: "profile" });
   } catch (error) {
     console.error(error);
