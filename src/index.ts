@@ -6,6 +6,7 @@ import express from "express";
 import morgan from "morgan";
 import fs from "fs";
 import api from "./router";
+import cookieParser from "cookie-parser";
 
 const allowedOrigins: string[] = [process.env.CURRENT_URL ?? "*"];
 const corsOptions: cors.CorsOptions = {
@@ -20,6 +21,7 @@ app.use(express.json({ limit: "10mb" }));
 app.use(cors(corsOptions));
 app.use(morgan("dev"));
 app.use("/api/v1", api);
+app.use(cookieParser());
 
 app.get("/", (req, res) => {
   res.send("Working");
