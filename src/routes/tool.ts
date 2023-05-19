@@ -5,7 +5,7 @@ import {
   getToolsByQuery,
   syncAirtable,
   updateSingleToolById,
-} from "../controllers/tool_controller";
+} from "../controllers/tool-controller";
 
 const toolRouter: express.Router = express.Router();
 
