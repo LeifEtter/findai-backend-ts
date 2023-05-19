@@ -27,4 +27,4 @@ const login = async (req: Request, res: Response) => {
   }
 };
 
-export { getUserById, getUserProfile };
+export { getUserById, getUserProfile, login };

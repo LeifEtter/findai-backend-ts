@@ -7,7 +7,7 @@ import {
   convertOrderQueryToOrderObject,
   convertQueryToList,
 } from "../helpers/conversion";
-import { toolValidation } from "../helpers/validation";
+import Validation from "../helpers/validation";
 dotenv.config();
 
 const unsyncTools = async () => {
@@ -167,12 +167,6 @@ const deleteSingleToolById = async (req: Request, res: Response) => {
 
 const updateSingleToolById = async (req: Request, res: Response) => {
   try {
-    const validation = await toolValidation
-      .validateAsync(req.body)
-      .catch((error) => ({ error: error.details[0].message }));
-    if ("error" in validation) {
-      return res.status(400).send({ error: validation.error });
-    }
     return res.status(200).send({ message: "Updated tool successfully" });
   } catch (error) {
     console.log(error);
