@@ -1,11 +1,20 @@
 import { NextFunction, Request, Response } from "express";
 import jwt from "jsonwebtoken";
+import prisma from "../db";
 
 const getUserById = async (req: Request, res: Response, next: NextFunction) => {
   try {
+    if (!req.body.userId) {
+      return res.status(500).send({ message: "Problem getting userId" });
+    }
+    const result = await prisma.user.findUnique({
+      where: { id: req.body.userId },
+    });
+    req.body.user = result;
     next();
   } catch (error) {
     console.error(error);
+    return res.status(500).send({ message: "Something went wrong" });
   }
 };
 
