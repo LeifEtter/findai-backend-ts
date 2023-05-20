@@ -10,8 +10,11 @@ const login = Joi.object({
 });
 
 const register = Joi.object({
+  name: Joi.string().required(),
   email: Joi.string().required().email(),
   password: Joi.string().required().min(8),
+  profileImage: Joi.string().uri(),
+  biography: Joi.string(),
 });
 
 export default { createTool, login, register };
