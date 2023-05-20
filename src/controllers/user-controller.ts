@@ -1,6 +1,9 @@
 import { NextFunction, Request, Response } from "express";
 import jwt from "jsonwebtoken";
 import prisma from "../db";
+import bcrypt from "bcrypt";
+import { Role } from "@prisma/client";
+const saltRounds = 10;
 
 const getUserById = async (req: Request, res: Response, next: NextFunction) => {
   try {
@@ -27,6 +30,28 @@ const getUserProfile = async (req: Request, res: Response) => {
   }
 };
 
+const register = async (req: Request, res: Response) => {
+  try {
+    const hashedPassword = await bcrypt.hash(req.body.password, saltRounds);
+    const user = await prisma.user.create({
+      data: {
+        name: req.body.name,
+        password: hashedPassword,
+        email: req.body.email,
+        profileImage: req.body.profileImage,
+        biography: req.body.biography,
+        role: Role.USER,
+      },
+    });
+    return res.status(201).send({ message: "Account succesfully saved" });
+  } catch (error) {
+    console.error(error);
+    return res
+      .status(500)
+      .send({ message: "Something went wrong during registration" });
+  }
+};
+
 const login = async (req: Request, res: Response) => {
   try {
     const token: string = jwt.sign(
@@ -47,4 +72,4 @@ const login = async (req: Request, res: Response) => {
   }
 };
 
-export { getUserById, getUserProfile, login };
+export { getUserById, getUserProfile, login, register };
