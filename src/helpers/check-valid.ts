@@ -1,3 +1,4 @@
+import Joi from "joi";
 import Validators from "./validation";
 import { Request, Response, NextFunction } from "express";
 
@@ -8,17 +9,14 @@ const checkValid = (validationType: string) => {
 
   return async function (req: Request, res: Response, next: NextFunction) {
     try {
-      const validated = await Validators[
-        validationType as keyof typeof Validators
-      ]
-        .validateAsync(req.body)
-        .catch((error) => ({ error: error.details[0].message }));
-      if ("error" in validated) {
-        return res.status(400).send({ message: validated.error });
-      } else {
-        next();
-      }
+      await Validators[validationType as keyof typeof Validators].validateAsync(
+        req.body
+      );
+      next();
     } catch (error) {
+      if (error instanceof Joi.ValidationError) {
+        return res.status(400).send({ message: error.message });
+      }
       console.error(error);
       return res
         .status(500)
