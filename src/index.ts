@@ -27,7 +27,13 @@ app.get("/", (req, res) => {
   res.send("Working");
 });
 
-if (process.env.NODE_ENV == "server") {
+if (!process.env.NODE_ENV) {
+  console.error("Please add 'NODE_ENV=[server/development]' to the .env file");
+} else if (!process.env.JWT_SECRET) {
+  console.error(
+    "Please add 'JWT_SECRET=[string for jwt encrypting]' to the .env file"
+  );
+} else if (process.env.NODE_ENV == "server") {
   const options: https.ServerOptions = {
     key: fs.readFileSync("./server.key"),
     cert: fs.readFileSync("./server.cert"),
@@ -43,6 +49,4 @@ if (process.env.NODE_ENV == "server") {
     console.log(`🚀 App listening on the port ${process.env.PORT}`);
     console.log(`=================================`);
   });
-} else {
-  console.log("Please defne a NODE_ENV in the .env file");
 }
