@@ -101,9 +101,9 @@ model User {
   email           String       @unique
   password        String
   name            String
-  profileImage    String       @db.Text
-  biography       String       @db.Text
-  role            String
+  profileImage    String?      @db.Text
+  biography       String?      @db.Text
+  role            Role
   softDelete      Boolean      @default(false)
   creationDate    DateTime     @default(now())
   lastUpdated     DateTime     @default(now())
@@ -119,4 +119,9 @@ enum Log_action {
   READ
   UPDATE
   DELETE
+}
+
+enum Role {
+  USER
+  ADMIN
 }
