@@ -37,9 +37,14 @@ if (!process.env.NODE_ENV) {
   console.error(
     "Please add 'SENDGRID_API_KEY=[api key from sendgrid]' to allow the sending of emails"
   );
-} else if (!process.env.AIRTABLE_URL || !process.env.AIRTABLE_TOKEN) {
+} else if (
+  !process.env.AIRTABLE_URL ||
+  !process.env.AIRTABLE_TOKEN ||
+  !process.env.AIRTABLE_TOOL_TABLE_ID ||
+  !process.env.AIRTABLE_TAG_TABLE_ID
+) {
   console.error(
-    "Please add 'AIRTABLE_URL=[url]' and 'AIRTABLE_TOKEN=[token]' to the env file"
+    "Please add 'AIRTABLE_URL=[url]' and 'AIRTABLE_TOKEN=[token]' to the env file, also add 'AIRTABLE_TOOL_TABLE_ID=[id]' and 'AIRTABLE_TAG_TABLE_ID=[id]'"
   );
 } else if (!process.env.PORT) {
   console.error("Please add 'PORT=[port to run server on]' to the .env file");
