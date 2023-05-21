@@ -14,4 +14,14 @@ interface AirtableTool {
   fields: AirtableToolFields;
 }
 
-export { AirtableTool, AirtableToolFields };
+interface AirtableTag {
+  id: string;
+  createdTime: string;
+  fields: AirtableTagFields;
+}
+
+interface AirtableTagFields {
+  name: string;
+}
+
+export { AirtableTool, AirtableToolFields, AirtableTag, AirtableTagFields };

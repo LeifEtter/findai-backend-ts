@@ -57,6 +57,7 @@ const syncAirtable = async (req: Request, res: Response) => {
         },
       });
       if (record == null) {
+        //TODO Implement skipping empty fields and fields where not all criteria are present
         await prisma.tool.create({
           data: {
             id: tool.id,
