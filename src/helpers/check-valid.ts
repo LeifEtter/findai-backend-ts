@@ -1,17 +1,10 @@
 import Joi from "joi";
-import Validators from "./validation";
 import { Request, Response, NextFunction } from "express";
 
-const checkValid = (validationType: string) => {
-  if (!(validationType in Validators)) {
-    throw new Error("Not a valid validation type");
-  }
-
-  return async function (req: Request, res: Response, next: NextFunction) {
+const checkValid = (validationObject: Joi.ObjectSchema) =>
+  async function (req: Request, res: Response, next: NextFunction) {
     try {
-      await Validators[validationType as keyof typeof Validators].validateAsync(
-        req.body
-      );
+      await validationObject.validateAsync(req.body);
       next();
     } catch (error) {
       if (error instanceof Joi.ValidationError) {
@@ -23,6 +16,5 @@ const checkValid = (validationType: string) => {
         .send({ message: "Something went wrong during validation" });
     }
   };
-};
 
 export default checkValid;
