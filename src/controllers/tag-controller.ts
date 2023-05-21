@@ -72,4 +72,20 @@ const syncTags = async (req: Request, res: Response) => {
   }
 };
 
-export { syncTags };
+const getTag = async (req: Request, res: Response) => {
+  try {
+    const tag = await prisma.tag.findUnique({
+      where: { id: req.params.id },
+      include: { tools: true },
+    });
+    console.log(tag);
+    return res.status(200).send({ tag });
+  } catch (error) {
+    console.error(error);
+    return res
+      .status(500)
+      .send({ message: "Something went wrong while trying to get this tag" });
+  }
+};
+
+export { syncTags, getTag };

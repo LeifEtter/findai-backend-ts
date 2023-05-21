@@ -49,6 +49,7 @@ const syncAirtable = async (req: Request, res: Response) => {
   try {
     await unsyncTools();
     const tools: AirtableTool[] = await getAirtableData();
+
     for (const tool of tools) {
       const meta: MetaData = await getMetaDataForUrl(tool.fields.link);
       const record: object | null = await prisma.tool.findUnique({
@@ -69,7 +70,7 @@ const syncAirtable = async (req: Request, res: Response) => {
             priceModel: tool.fields.priceModel,
             approval: tool.fields.approval,
             tags: {
-              connect: [{ id: "sd" }],
+              connect: tool.fields.tags?.map((id) => ({ id: id })),
             },
             creator: {
               connect: {
@@ -91,11 +92,7 @@ const syncAirtable = async (req: Request, res: Response) => {
             priceModel: tool.fields.priceModel,
             approval: tool.fields.approval,
             tags: {
-              connect: [
-                {
-                  id: "",
-                },
-              ],
+              connect: tool.fields.tags?.map((id) => ({ id: id })),
             },
             synced: true,
           },
