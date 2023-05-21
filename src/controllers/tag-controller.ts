@@ -24,28 +24,47 @@ const fetchTagsFromAirtable = async (): Promise<AirtableTag[]> => {
   }
 };
 
+const unsyncAllTags = async () => {
+  await prisma.tag.updateMany({
+    data: {
+      synced: false,
+    },
+  });
+};
+
+const deleteUnsyncedTags = async () => {
+  await prisma.tag.deleteMany({
+    where: {
+      synced: false,
+    },
+  });
+};
+
 const syncTags = async (req: Request, res: Response) => {
   try {
+    await unsyncAllTags();
     //TODO Implement skipping empty fields and fields where not all criteria are present
     const tags: AirtableTag[] = await fetchTagsFromAirtable();
+
     for (const tag of tags) {
       const record: object | null = await prisma.tag.findUnique({
         where: { id: tag.id },
       });
-      console.log(tags);
       if (!record) {
         await prisma.tag.create({
-          data: { id: tag.id, name: tag.fields.name },
+          data: { id: tag.id, name: tag.fields.name, synced: true },
         });
       } else {
         await prisma.tag.update({
           where: { id: tag.id },
           data: {
             name: tag.fields.name,
+            synced: true,
           },
         });
       }
     }
+    await deleteUnsyncedTags();
     return res.status(200).send({ message: "Tags successfully synced" });
   } catch (error) {
     console.error(error);
