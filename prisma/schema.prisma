@@ -40,7 +40,7 @@ model Log {
 }
 
 model Tool {
-  id           Int           @id @default(autoincrement())
+  id           String        @id
   name         String        @unique
   url          String        @unique
   description  String        @db.Text
@@ -68,7 +68,7 @@ model Tool {
 model ToolUpvote {
   id           Int      @id @default(autoincrement())
   userId       Int
-  toolId       Int?
+  toolId       String?
   creationDate DateTime @default(now())
   tool         Tool?    @relation(fields: [toolId], references: [id])
   user         User     @relation(fields: [userId], references: [id])
@@ -78,19 +78,19 @@ model ToolUpvote {
 }
 
 model Review {
-  id        Int  @id @default(autoincrement())
+  id        Int    @id @default(autoincrement())
   content   Json
   creatorId Int
-  toolId    Int
-  user      User @relation(fields: [creatorId], references: [id])
-  tool      Tool @relation(fields: [toolId], references: [id])
+  toolId    String
+  user      User   @relation(fields: [creatorId], references: [id])
+  tool      Tool   @relation(fields: [toolId], references: [id])
 
   @@index([creatorId], map: "Review_creatorId_fkey")
   @@index([toolId], map: "Review_toolId_fkey")
 }
 
 model Tag {
-  id           Int      @id @default(autoincrement())
+  id           String   @id
   name         String   @unique
   tools        Tool[]
   creationDate DateTime @default(now())

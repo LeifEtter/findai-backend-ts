@@ -59,6 +59,7 @@ const syncAirtable = async (req: Request, res: Response) => {
       if (record == null) {
         await prisma.tool.create({
           data: {
+            id: tool.id,
             url: tool.fields.link,
             name: tool.fields.title,
             description:
@@ -67,7 +68,7 @@ const syncAirtable = async (req: Request, res: Response) => {
             priceModel: tool.fields.priceModel,
             approval: tool.fields.approval,
             tags: {
-              connect: [{ id: 1 }],
+              connect: [{ id: "sd" }],
             },
             creator: {
               connect: {
@@ -91,7 +92,7 @@ const syncAirtable = async (req: Request, res: Response) => {
             tags: {
               connect: [
                 {
-                  id: 1,
+                  id: "",
                 },
               ],
             },
@@ -112,7 +113,7 @@ const syncAirtable = async (req: Request, res: Response) => {
 const getSingleToolById = async (req: Request, res: Response) => {
   try {
     const tool = await prisma.tool.findUnique({
-      where: { id: parseInt(req.params.id) },
+      where: { id: req.params.id },
     });
     return res.status(200).send(tool);
   } catch (error) {
@@ -153,7 +154,7 @@ const deleteSingleToolById = async (req: Request, res: Response) => {
   try {
     await prisma.tool
       .delete({
-        where: { id: parseInt(req.params.id) },
+        where: { id: req.params.id },
       })
       .catch((error) => {
         if (error.code == "P2025")
