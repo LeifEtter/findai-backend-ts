@@ -72,12 +72,4 @@ const syncTags = async (req: Request, res: Response) => {
   }
 };
 
-const createTag = async (req: Request, res: Response) => {
-  try {
-    console.log(req.body);
-  } catch (error) {
-    console.error(error);
-  }
-};
-
-export { syncTags, createTag };
+export { syncTags };
