@@ -37,7 +37,7 @@ const register = async (req: Request, res: Response) => {
     const verificationCode = Math.floor(Math.random() * 100000);
 
     sendEmail({ res: res, email: req.body.email, code: verificationCode });
-    await prisma.user.create({
+    const user = await prisma.user.create({
       data: {
         name: req.body.name,
         password: hashedPassword,
@@ -49,7 +49,11 @@ const register = async (req: Request, res: Response) => {
       },
     });
 
-    return res.status(201).send({ message: "Account succesfully saved" });
+    return res.status(201).send({
+      userId: user.id,
+      message:
+        "An Email with your verification code has been sent, please use the user/verify route and provide you're user id and code",
+    });
   } catch (error) {
     if (
       error instanceof Prisma.PrismaClientKnownRequestError &&
@@ -67,18 +71,35 @@ const register = async (req: Request, res: Response) => {
 
 const login = async (req: Request, res: Response) => {
   try {
-    const token: string = jwt.sign(
-      {
-        userId: 1,
-      },
-      process.env.JWT_SECRET!,
-      {
-        algorithm: "HS256",
-        expiresIn: 900000,
-      }
+    const user = await prisma.user.findUnique({
+      where: { email: req.body.email },
+    });
+    if (!user || user.verified == false) {
+      return res
+        .status(400)
+        .send({ message: "No verified user found with this email adress" });
+    }
+    const pwIsMatch: boolean = await bcrypt.compare(
+      req.body.password,
+      user.password
     );
-
-    return res.status(200).send({ token });
+    if (pwIsMatch) {
+      const token: string = jwt.sign(
+        {
+          userId: user.id,
+        },
+        process.env.JWT_SECRET!,
+        {
+          algorithm: "HS256",
+          expiresIn: 900000,
+        }
+      );
+      return res.status(200).send({ token });
+    } else {
+      return res
+        .status(401)
+        .send({ message: "Email and Password don't match" });
+    }
   } catch (error) {
     console.error(error);
     return res.status(500).send({ message: "Couldn't log in" });
