@@ -1,7 +1,14 @@
 import nodemailer from "nodemailer";
 import nodemailerSendgrid from "nodemailer-sendgrid";
+import { Response } from "express";
 
-const sendEmail = async (email: string, link: string) => {
+interface SendEmailParams {
+  res: Response;
+  email: string;
+  code: string;
+}
+
+const sendEmail = async ({ res, email, code }: SendEmailParams) => {
   try {
     const transporter = nodemailer.createTransport(
       nodemailerSendgrid({
@@ -13,11 +20,12 @@ const sendEmail = async (email: string, link: string) => {
       to: email,
       subject: "Welcome to the Fact Checker App",
       text: "Its great to have you join!",
-      html: `<h1>Here is the Verification Link</h1><a clicktracking=off href="${link}">Verify Email Address</a>`,
+      html: `<h1>Here is the Verification Link</h1><h2>${code}</h2>`,
     });
-    return true;
   } catch (error) {
-    return false;
+    return res.status(500).send({
+      message: "Something went wrong trying to deliver you the confirmation",
+    });
   }
 };
 

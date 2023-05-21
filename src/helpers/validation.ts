@@ -17,4 +17,9 @@ const register = Joi.object({
   biography: Joi.string(),
 });
 
-export default { createTool, login, register };
+const verify = Joi.object({
+  id: Joi.number(),
+  verificationCode: Joi.number(),
+});
+
+export default { createTool, login, register, verify };
