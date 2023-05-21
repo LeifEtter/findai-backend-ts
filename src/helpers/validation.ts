@@ -22,4 +22,8 @@ const verify = Joi.object({
   verificationCode: Joi.number(),
 });
 
-export default { createTool, login, register, verify };
+const createTag = Joi.object({
+  name: Joi.string(),
+});
+
+export default { createTool, login, register, verify, createTag };
