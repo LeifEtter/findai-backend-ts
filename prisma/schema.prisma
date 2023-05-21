@@ -97,21 +97,23 @@ model Tag {
 }
 
 model User {
-  id              Int          @id @default(autoincrement())
-  email           String       @unique
-  password        String
-  name            String
-  profileImage    String?      @db.Text
-  biography       String?      @db.Text
-  role            Role
-  softDelete      Boolean      @default(false)
-  creationDate    DateTime     @default(now())
-  lastUpdated     DateTime     @default(now())
-  logs            Log[]
-  tools           Tool[]
-  upvotes         ToolUpvote[]
-  reviews         Review[]
-  bookmarkedTools Tool[]       @relation("userBookmarks")
+  id               Int          @id @default(autoincrement())
+  email            String       @unique
+  password         String
+  name             String
+  profileImage     String?      @db.Text
+  biography        String?      @db.Text
+  role             Role
+  softDelete       Boolean      @default(false)
+  creationDate     DateTime     @default(now())
+  lastUpdated      DateTime     @default(now())
+  logs             Log[]
+  tools            Tool[]
+  upvotes          ToolUpvote[]
+  reviews          Review[]
+  bookmarkedTools  Tool[]       @relation("userBookmarks")
+  verificationCode Int?
+  verified         Boolean      @default(false)
 }
 
 enum Log_action {
