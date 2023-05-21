@@ -5,7 +5,7 @@ import { Response } from "express";
 interface SendEmailParams {
   res: Response;
   email: string;
-  code: string;
+  code: number;
 }
 
 const sendEmail = async ({ res, email, code }: SendEmailParams) => {

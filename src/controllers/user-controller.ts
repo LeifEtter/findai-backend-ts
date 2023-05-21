@@ -2,12 +2,8 @@ import { NextFunction, Request, Response } from "express";
 import jwt from "jsonwebtoken";
 import prisma from "../db";
 import bcrypt from "bcrypt";
-import { Role } from "@prisma/client";
+import { Prisma, Role } from "@prisma/client";
 import { sendEmail } from "../helpers/email";
-import {
-  PrismaClientKnownRequestError,
-  PrismaClientValidationError,
-} from "@prisma/client/runtime";
 const saltRounds = 10;
 
 const getUserById = async (req: Request, res: Response, next: NextFunction) => {
@@ -40,7 +36,7 @@ const register = async (req: Request, res: Response) => {
     const hashedPassword = await bcrypt.hash(req.body.password, saltRounds);
     const verificationCode = Math.floor(Math.random() * 100000);
 
-    sendEmail({ res: res, email: req.body.email, code: "" });
+    sendEmail({ res: res, email: req.body.email, code: verificationCode });
     await prisma.user.create({
       data: {
         name: req.body.name,
@@ -55,6 +51,12 @@ const register = async (req: Request, res: Response) => {
 
     return res.status(201).send({ message: "Account succesfully saved" });
   } catch (error) {
+    if (
+      error instanceof Prisma.PrismaClientKnownRequestError &&
+      error.code == "P2002"
+    ) {
+      return res.status(400).send({ message: "Email is already in use" });
+    }
     console.error(error);
     if (error)
       return res
