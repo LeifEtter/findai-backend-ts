@@ -28,13 +28,16 @@ const cleanupUnsyncedTools = async () => {
 
 const getAirtableData = async (): Promise<AirtableTool[]> => {
   try {
-    const response = await fetch(process.env.AIRTABLE_URL || "", {
-      method: "GET",
-      headers: {
-        Accept: "application/json",
-        Authorization: `Bearer ${process.env.AIRTABLE_TOKEN}`,
-      },
-    });
+    const response = await fetch(
+      `${process.env.AIRTABLE_URL}/${process.env.AIRTABLE_TOOL_TABLE_ID}`,
+      {
+        method: "GET",
+        headers: {
+          Accept: "application/json",
+          Authorization: `Bearer ${process.env.AIRTABLE_TOKEN}`,
+        },
+      }
+    );
     const result = JSON.parse(await response.text());
     return result.records;
   } catch (error) {
