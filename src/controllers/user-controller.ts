@@ -101,7 +101,7 @@ const login = async (req: Request, res: Response) => {
         {
           algorithm: "HS256",
           //TODO Change jwt expiry
-          expiresIn: 900000,
+          expiresIn: "2h",
         }
       );
       return res.status(200).send({ token });
