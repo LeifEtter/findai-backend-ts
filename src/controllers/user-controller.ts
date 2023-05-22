@@ -86,7 +86,7 @@ const login = async (req: Request, res: Response) => {
     if (!user || user.verified == false) {
       return res
         .status(400)
-        .send({ message: "No verified user found with this email adress" });
+        .send({ message: "No verified user found with this email address" });
     }
     const pwIsMatch: boolean = await bcrypt.compare(
       req.body.password,
@@ -100,6 +100,7 @@ const login = async (req: Request, res: Response) => {
         process.env.JWT_SECRET!,
         {
           algorithm: "HS256",
+          //TODO Change jwt expiry
           expiresIn: 900000,
         }
       );
@@ -166,6 +167,39 @@ const deleteUserById = async (req: Request, res: Response) => {
   }
 };
 
+const updateProfile = async (req: Request, res: Response) => {
+  try {
+    if (req.body.email && req.body.email != req.body.user.email) {
+      return res.status(400).send({
+        message:
+          "Please use the 'users/update/email' route to change your email ",
+      });
+    }
+    const user = await prisma.user.update({
+      where: {
+        id: req.body.user.id,
+      },
+      data: {
+        ...(req.body.biography && { biography: req.body.biography }),
+        ...(req.body.profileImage && { profileImage: req.body.profileImage }),
+        ...(req.body.password && {
+          password: await bcrypt.hash(req.body.password, saltRounds),
+        }),
+      },
+    });
+    if (!user) {
+      throw new Error();
+    }
+    user.password = "-- redacted --";
+    return res.status(200).send({ message: "Updated successfully", user });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).send({
+      message: "Something went wrong while trying to update your profile",
+    });
+  }
+};
+
 export {
   getProfileById,
   getProfile,
@@ -174,4 +208,5 @@ export {
   verify,
   deleteUserById,
   deleteSelf,
+  updateProfile,
 };
