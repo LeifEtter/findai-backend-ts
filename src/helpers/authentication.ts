@@ -34,6 +34,18 @@ const authentication = async (
     const user = await prisma.user.findUnique({
       where: { id: verifiedToken.userId },
     });
+    if (!user) {
+      return res.status(400).send({
+        message:
+          "User couldn't be found with user id provided in the jwt token",
+      });
+    }
+    if (!user.verified) {
+      return res.status(401).send({
+        message:
+          "Your account is still unverified, please verify under 'users/verify' with the code provided by email, before accessing routes that require authentication",
+      });
+    }
     req.body.user = user;
     next();
   } catch (error) {
