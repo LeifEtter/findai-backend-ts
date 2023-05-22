@@ -1,17 +1,9 @@
 import { PrismaClient } from "@prisma/client";
+import logger from "../src/logger";
 const prisma = new PrismaClient();
 
 async function main() {
-  await prisma.tag.deleteMany();
-  const tags = ["text", "video", "image"];
-
-  for (const tag of tags) {
-    await prisma.tag.create({
-      data: {
-        name: tag,
-      },
-    });
-  }
+  return;
 }
 
 main()
