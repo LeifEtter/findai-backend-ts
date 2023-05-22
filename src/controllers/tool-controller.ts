@@ -8,6 +8,7 @@ import {
   convertQueryToList,
 } from "../helpers/conversion";
 import logger from "../logger";
+import { fetchToolsFromAirtable } from "./airtable-controller";
 dotenv.config();
 
 const unsyncTools = async () => {
@@ -27,30 +28,9 @@ const cleanupUnsyncedTools = async () => {
   });
 };
 
-const getAirtableData = async (): Promise<AirtableTool[]> => {
-  try {
-    const response = await fetch(
-      `${process.env.AIRTABLE_URL}/${process.env.AIRTABLE_TOOL_TABLE_ID}`,
-      {
-        method: "GET",
-        headers: {
-          Accept: "application/json",
-          Authorization: `Bearer ${process.env.AIRTABLE_TOKEN}`,
-        },
-      }
-    );
-    const result = JSON.parse(await response.text());
-    return result.records;
-  } catch (error) {
-    throw new Error("Failed to get data from Airtable");
-  }
-};
-
-const syncAirtable = async (req: Request, res: Response) => {
+const syncTools = async (tools: AirtableTool[]) => {
   try {
     await unsyncTools();
-    const tools: AirtableTool[] = await getAirtableData();
-
     for (const tool of tools) {
       const meta: MetaData = await getMetaDataForUrl(tool.fields.link);
       const record: object | null = await prisma.tool.findUnique({
@@ -100,8 +80,19 @@ const syncAirtable = async (req: Request, res: Response) => {
         });
       }
     }
-    //TODO Implement rescraping if this is passed in query
     await cleanupUnsyncedTools();
+    return;
+  } catch (error) {
+    console.error(error);
+    throw new Error("Couldn't sync tools");
+  }
+};
+
+const syncToolsWithAirtable = async (req: Request, res: Response) => {
+  try {
+    const tools: AirtableTool[] = await fetchToolsFromAirtable();
+    await syncTools(tools);
+    //TODO Implement rescraping if this is passed in query
     return res.status(200).send({ message: "Synced Successfully" });
   } catch (error) {
     logger.error(error);
@@ -178,7 +169,8 @@ const updateSingleToolById = async (req: Request, res: Response) => {
 };
 
 export {
-  syncAirtable,
+  syncTools,
+  syncToolsWithAirtable,
   getSingleToolById,
   getToolsByQuery,
   deleteSingleToolById,

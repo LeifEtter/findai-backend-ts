@@ -3,27 +3,8 @@ import * as dotenv from "dotenv";
 import { AirtableTag } from "../models/airtable_models";
 import prisma from "../db";
 import logger from "../logger";
+import { fetchTagsFromAirtable } from "./airtable-controller";
 dotenv.config();
-
-const fetchTagsFromAirtable = async (): Promise<AirtableTag[]> => {
-  try {
-    const response = await fetch(
-      `${process.env.AIRTABLE_URL}/${process.env.AIRTABLE_TAG_TABLE_ID}`,
-      {
-        method: "GET",
-        headers: {
-          Accept: "application/json",
-          Authorization: `Bearer ${process.env.AIRTABLE_TOKEN}`,
-        },
-      }
-    );
-    const result = JSON.parse(await response.text());
-    return result.records;
-  } catch (error) {
-    logger.error(error);
-    throw new Error();
-  }
-};
 
 const unsyncAllTags = async () => {
   await prisma.tag.updateMany({
@@ -41,12 +22,9 @@ const deleteUnsyncedTags = async () => {
   });
 };
 
-const syncTags = async (req: Request, res: Response) => {
+const syncTags = async (tags: AirtableTag[]) => {
   try {
     await unsyncAllTags();
-    //TODO Implement skipping empty fields and fields where not all criteria are present
-    const tags: AirtableTag[] = await fetchTagsFromAirtable();
-
     for (const tag of tags) {
       const record: object | null = await prisma.tag.findUnique({
         where: { id: tag.id },
@@ -66,6 +44,18 @@ const syncTags = async (req: Request, res: Response) => {
       }
     }
     await deleteUnsyncedTags();
+    return;
+  } catch (error) {
+    console.error(error);
+    throw new Error("Couldn't sync tags");
+  }
+};
+
+const syncTagsWithAirtable = async (req: Request, res: Response) => {
+  try {
+    //TODO Implement skipping empty fields and fields where not all criteria are present
+    const tags: AirtableTag[] = await fetchTagsFromAirtable();
+    await syncTags(tags);
     return res.status(200).send({ message: "Tags successfully synced" });
   } catch (error) {
     logger.error(error);
@@ -89,4 +79,4 @@ const getTag = async (req: Request, res: Response) => {
   }
 };
 
-export { syncTags, getTag };
+export { syncTags, syncTagsWithAirtable, getTag };
