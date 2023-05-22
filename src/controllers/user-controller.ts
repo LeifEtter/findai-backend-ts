@@ -2,14 +2,14 @@ import { Request, Response } from "express";
 import jwt from "jsonwebtoken";
 import prisma from "../db";
 import bcrypt from "bcrypt";
-import { Prisma, Role } from "@prisma/client";
+import { Prisma, Role, User } from "@prisma/client";
 import { sendEmail } from "../helpers/email";
 import logger from "../logger";
 const saltRounds = 10;
 
 const getProfileById = async (req: Request, res: Response) => {
   try {
-    const profile = await prisma.user.findUnique({
+    const profile: User | null = await prisma.user.findUnique({
       where: { id: parseInt(req.params.id) },
     });
     if (!profile) {
@@ -17,6 +17,7 @@ const getProfileById = async (req: Request, res: Response) => {
         message: `Couldn't find a profile for user with id: ${req.params.id}`,
       });
     }
+    profile["password"] = "-- redacted --";
     return res.status(200).send({
       message: `Successfully queried profile for user with id: ${req.params.id}`,
       profile,
@@ -29,6 +30,7 @@ const getProfileById = async (req: Request, res: Response) => {
 
 const getProfile = async (req: Request, res: Response) => {
   try {
+    req.body.user["password"] = "-- redacted --";
     return res.status(200).send({ profile: req.body.user });
   } catch (error) {
     logger.error(error);
