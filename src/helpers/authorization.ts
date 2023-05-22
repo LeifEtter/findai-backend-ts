@@ -1,6 +1,7 @@
 import { Role, User } from "@prisma/client";
 import { NextFunction, Request, Response } from "express";
 
+//! Needs Access to user stored in req.body during authentication to work
 const roleLevel = {
   USER: 0,
   ADMIN: 1,

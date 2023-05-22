@@ -7,16 +7,20 @@ import { sendEmail } from "../helpers/email";
 import logger from "../logger";
 const saltRounds = 10;
 
-const getUserById = async (req: Request, res: Response, next: NextFunction) => {
+const getProfileById = async (req: Request, res: Response) => {
   try {
-    if (!req.body.userId) {
-      return res.status(500).send({ message: "Problem getting userId" });
-    }
-    const result = await prisma.user.findUnique({
-      where: { id: req.body.userId },
+    const profile = await prisma.user.findUnique({
+      where: { id: parseInt(req.params.id) },
     });
-    req.body.user = result;
-    next();
+    if (!profile) {
+      return res.status(400).send({
+        message: `Couldn't find a profile for user with id: ${req.params.id}`,
+      });
+    }
+    return res.status(200).send({
+      message: `Successfully queried profile for user with id: ${req.params.id}`,
+      profile,
+    });
   } catch (error) {
     logger.error(error);
     return res.status(500).send({ message: "Something went wrong" });
@@ -129,10 +133,22 @@ const verify = async (req: Request, res: Response) => {
   }
 };
 
-const deleteUser = async (req: Request, res: Response) => {
+const deleteSelf = async (req: Request, res: Response) => {
   try {
-    const user: User = req.body.user;
-    await prisma.user.delete({ where: { id: 100 } });
+    await prisma.user.delete({ where: { id: req.body.user.id } });
+    return res.status(200).send({ message: "Account deleted successfully" });
+  } catch (error) {
+    console.error(error);
+    return res.status(200);
+  }
+};
+
+const deleteUserById = async (req: Request, res: Response) => {
+  try {
+    await prisma.user.delete({ where: { id: parseInt(req.params.id) } });
+    return res
+      .status(200)
+      .send({ message: `User with id ${req.params.id} deleted successfully` });
   } catch (error) {
     if (error instanceof Prisma.PrismaClientKnownRequestError) {
       if (error.code == "P2025") {
@@ -146,4 +162,12 @@ const deleteUser = async (req: Request, res: Response) => {
   }
 };
 
-export { getUserById, getUserProfile, login, register, verify, deleteUser };
+export {
+  getProfileById,
+  getUserProfile,
+  login,
+  register,
+  verify,
+  deleteUserById,
+  deleteSelf,
+};
