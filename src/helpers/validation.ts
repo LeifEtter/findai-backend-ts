@@ -1,29 +1,21 @@
 import Joi from "joi";
+import { Request, Response, NextFunction } from "express";
+import logger from "../logger";
 
-const createTool = Joi.object({
-  title: Joi.string().required().min(10),
-});
+const validation = (validationObject: Joi.ObjectSchema) =>
+  async function (req: Request, res: Response, next: NextFunction) {
+    try {
+      await validationObject.validateAsync(req.body);
+      next();
+    } catch (error) {
+      if (error instanceof Joi.ValidationError) {
+        return res.status(400).send({ message: error.message });
+      }
+      logger.error(error);
+      return res
+        .status(500)
+        .send({ message: "Something went wrong during validation" });
+    }
+  };
 
-const login = Joi.object({
-  email: Joi.string().required().email(),
-  password: Joi.string().required().min(8),
-});
-
-const register = Joi.object({
-  name: Joi.string().required(),
-  email: Joi.string().required().email(),
-  password: Joi.string().required().min(8),
-  profileImage: Joi.string().uri(),
-  biography: Joi.string(),
-});
-
-const verify = Joi.object({
-  id: Joi.number(),
-  verificationCode: Joi.number(),
-});
-
-const createTag = Joi.object({
-  name: Joi.string(),
-});
-
-export default { createTool, login, register, verify, createTag };
+export default validation;

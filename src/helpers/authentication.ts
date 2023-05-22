@@ -2,10 +2,15 @@ import jwt from "jsonwebtoken";
 import { JwtPayload } from "jsonwebtoken";
 import { Request, Response, NextFunction } from "express";
 import * as dotenv from "dotenv";
+import prisma from "../db";
 
 dotenv.config();
 
-const extractToken = (req: Request, res: Response, next: NextFunction) => {
+const authentication = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
   if (!req.headers.authorization) {
     return res.status(403).send({ message: "Please provide a token" });
   }
@@ -20,9 +25,16 @@ const extractToken = (req: Request, res: Response, next: NextFunction) => {
       jwtToken,
       process.env.JWT_SECRET!
     );
-    if (typeof verifiedToken != "string") {
-      req.body.userId = verifiedToken.userId;
+    if (typeof verifiedToken == "string") {
+      console.error("The JWT Token decoded to a string unexpectedly");
+      return res
+        .status(500)
+        .send({ message: "Something went wrong during auth" });
     }
+    const user = await prisma.user.findUnique({
+      where: { id: verifiedToken.userId },
+    });
+    req.body.user = user;
     next();
   } catch (error) {
     return res.status(403).send({
@@ -32,4 +44,4 @@ const extractToken = (req: Request, res: Response, next: NextFunction) => {
   }
 };
 
-export default extractToken;
+export default authentication;

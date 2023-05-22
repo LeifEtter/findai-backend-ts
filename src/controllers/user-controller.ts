@@ -2,7 +2,7 @@ import { NextFunction, Request, Response } from "express";
 import jwt from "jsonwebtoken";
 import prisma from "../db";
 import bcrypt from "bcrypt";
-import { Prisma, Role } from "@prisma/client";
+import { Prisma, Role, User } from "@prisma/client";
 import { sendEmail } from "../helpers/email";
 import logger from "../logger";
 const saltRounds = 10;
@@ -129,4 +129,21 @@ const verify = async (req: Request, res: Response) => {
   }
 };
 
-export { getUserById, getUserProfile, login, register, verify };
+const deleteUser = async (req: Request, res: Response) => {
+  try {
+    const user: User = req.body.user;
+    await prisma.user.delete({ where: { id: 100 } });
+  } catch (error) {
+    if (error instanceof Prisma.PrismaClientKnownRequestError) {
+      if (error.code == "P2025") {
+        return res.status(400).send({ message: "User couldn't be found" });
+      }
+    }
+    logger.error(error);
+    return res.status(500).send({
+      message: "Something went wrong while trying to delete the account",
+    });
+  }
+};
+
+export { getUserById, getUserProfile, login, register, verify, deleteUser };

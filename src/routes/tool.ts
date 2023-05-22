@@ -6,8 +6,8 @@ import {
   syncAirtable,
   updateSingleToolById,
 } from "../controllers/tool-controller";
-import checkValid from "../helpers/check-valid";
-import val from "../helpers/validation";
+import checkValid from "../helpers/validation";
+import val from "../helpers/validator-schemas";
 
 const toolRouter: express.Router = express.Router();
 
