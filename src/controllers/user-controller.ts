@@ -4,6 +4,7 @@ import prisma from "../db";
 import bcrypt from "bcrypt";
 import { Prisma, Role } from "@prisma/client";
 import { sendEmail } from "../helpers/email";
+import logger from "../logger";
 const saltRounds = 10;
 
 const getUserById = async (req: Request, res: Response, next: NextFunction) => {
@@ -17,17 +18,17 @@ const getUserById = async (req: Request, res: Response, next: NextFunction) => {
     req.body.user = result;
     next();
   } catch (error) {
-    console.error(error);
+    logger.error(error);
     return res.status(500).send({ message: "Something went wrong" });
   }
 };
 
 const getUserProfile = async (req: Request, res: Response) => {
   try {
-    console.log(req.body.userId);
+    logger.info(req.body.userId);
     return res.status(200).send({ message: "Profile" });
   } catch (error) {
-    console.error(error);
+    logger.error(error);
   }
 };
 
@@ -61,7 +62,7 @@ const register = async (req: Request, res: Response) => {
     ) {
       return res.status(400).send({ message: "Email is already in use" });
     }
-    console.error(error);
+    logger.error(error);
     if (error)
       return res
         .status(500)
@@ -101,7 +102,7 @@ const login = async (req: Request, res: Response) => {
         .send({ message: "Email and Password don't match" });
     }
   } catch (error) {
-    console.error(error);
+    logger.error(error);
     return res.status(500).send({ message: "Couldn't log in" });
   }
 };

@@ -1,11 +1,7 @@
 import { PrismaClient } from "@prisma/client";
 
-// const logLevels: string[] = ["query", "info", "warn", "error"];
-// const prisma: PrismaClient = new PrismaClient({
-//   log: logLevels.map((level) => ({ emit: "event", level })),
-//   errorFormat: "pretty",
-// });
-
-const prisma: PrismaClient = new PrismaClient();
+const prisma: PrismaClient = new PrismaClient({
+  log: ["query", "info", "warn", "error"],
+});
 
 export default prisma;

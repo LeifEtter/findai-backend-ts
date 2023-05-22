@@ -2,6 +2,7 @@ import { Request, Response } from "express";
 import * as dotenv from "dotenv";
 import { AirtableTag } from "../models/airtable_models";
 import prisma from "../db";
+import logger from "../logger";
 dotenv.config();
 
 const fetchTagsFromAirtable = async (): Promise<AirtableTag[]> => {
@@ -19,7 +20,7 @@ const fetchTagsFromAirtable = async (): Promise<AirtableTag[]> => {
     const result = JSON.parse(await response.text());
     return result.records;
   } catch (error) {
-    console.error(error);
+    logger.error(error);
     throw new Error();
   }
 };
@@ -67,7 +68,7 @@ const syncTags = async (req: Request, res: Response) => {
     await deleteUnsyncedTags();
     return res.status(200).send({ message: "Tags successfully synced" });
   } catch (error) {
-    console.error(error);
+    logger.error(error);
     return res.status(500).send({ message: "Couldn't Sync Tags" });
   }
 };
@@ -78,10 +79,10 @@ const getTag = async (req: Request, res: Response) => {
       where: { id: req.params.id },
       include: { tools: true },
     });
-    console.log(tag);
+    logger.info(tag);
     return res.status(200).send({ tag });
   } catch (error) {
-    console.error(error);
+    logger.error(error);
     return res
       .status(500)
       .send({ message: "Something went wrong while trying to get this tag" });

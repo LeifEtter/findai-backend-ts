@@ -1,4 +1,5 @@
 import { PrismaClient } from "@prisma/client";
+import logger from "../src/logger";
 const prisma = new PrismaClient();
 
 async function main() {
@@ -13,7 +14,7 @@ async function main() {
       },
     },
   });
-  console.log(tools);
+  logger.info(tools);
 }
 
 main()
@@ -21,7 +22,7 @@ main()
     await prisma.$disconnect();
   })
   .catch(async (e) => {
-    console.error(e);
+    logger.error(e);
     await prisma.$disconnect();
     process.exit(1);
   });

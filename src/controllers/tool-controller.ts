@@ -7,6 +7,7 @@ import {
   convertOrderQueryToOrderObject,
   convertQueryToList,
 } from "../helpers/conversion";
+import logger from "../logger";
 dotenv.config();
 
 const unsyncTools = async () => {
@@ -103,7 +104,7 @@ const syncAirtable = async (req: Request, res: Response) => {
     await cleanupUnsyncedTools();
     return res.status(200).send({ message: "Synced Successfully" });
   } catch (error) {
-    console.error(error);
+    logger.error(error);
     throw new Error("Couldn't Sync Airtable Data with Database");
   }
 };
@@ -115,7 +116,7 @@ const getSingleToolById = async (req: Request, res: Response) => {
     });
     return res.status(200).send(tool);
   } catch (error) {
-    console.error(error);
+    logger.error(error);
     return res.status(500).send({ message: "Something went wrong " });
   }
 };
@@ -143,7 +144,7 @@ const getToolsByQuery = async (req: Request, res: Response) => {
 
     return res.status(200).send({ result });
   } catch (error) {
-    console.error(error);
+    logger.error(error);
     return res.status(500).send({ message: "Couldn't fulfill query" });
   }
 };
@@ -161,7 +162,7 @@ const deleteSingleToolById = async (req: Request, res: Response) => {
             .send({ message: "Can't find tool to be deleted" });
       });
   } catch (error) {
-    console.error(error);
+    logger.error(error);
     return res.status(500).send({ message: "Couldn't delete tool" });
   }
 };
@@ -170,7 +171,7 @@ const updateSingleToolById = async (req: Request, res: Response) => {
   try {
     return res.status(200).send({ message: "Updated tool successfully" });
   } catch (error) {
-    console.log(error);
+    logger.error(error);
     return res.status(500).send({ message: "Couldn't update tool" });
   }
 };

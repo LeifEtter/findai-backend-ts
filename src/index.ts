@@ -7,6 +7,7 @@ import morgan from "morgan";
 import fs from "fs";
 import api from "./router";
 import cookieParser from "cookie-parser";
+import logger from "./logger";
 
 const allowedOrigins: string[] = [process.env.CURRENT_URL ?? "*"];
 const corsOptions: cors.CorsOptions = {
@@ -22,19 +23,18 @@ app.use(cors(corsOptions));
 app.use(morgan("dev"));
 app.use("/api/v1", api);
 app.use(cookieParser());
-
 app.get("/", (req, res) => {
   res.send("Working");
 });
 
 if (!process.env.NODE_ENV) {
-  console.error("Please add 'NODE_ENV=[server/development]' to the .env file");
+  logger.error("Please add 'NODE_ENV=[server/development]' to the .env file");
 } else if (!process.env.JWT_SECRET) {
-  console.error(
+  logger.error(
     "Please add 'JWT_SECRET=[string for jwt encrypting]' to the .env file"
   );
 } else if (!process.env.SENDGRID_API_KEY) {
-  console.error(
+  logger.error(
     "Please add 'SENDGRID_API_KEY=[api key from sendgrid]' to allow the sending of emails"
   );
 } else if (
@@ -43,13 +43,13 @@ if (!process.env.NODE_ENV) {
   !process.env.AIRTABLE_TOOL_TABLE_ID ||
   !process.env.AIRTABLE_TAG_TABLE_ID
 ) {
-  console.error(
+  logger.error(
     "Please add 'AIRTABLE_URL=[url]' and 'AIRTABLE_TOKEN=[token]' to the env file, also add 'AIRTABLE_TOOL_TABLE_ID=[id]' and 'AIRTABLE_TAG_TABLE_ID=[id]'"
   );
 } else if (!process.env.PORT) {
-  console.error("Please add 'PORT=[port to run server on]' to the .env file");
+  logger.error("Please add 'PORT=[port to run server on]' to the .env file");
 } else if (!process.env.DATABASE_URL) {
-  console.error("Please add 'DATABASE_URL=[url]' to the .env file");
+  logger.error("Please add 'DATABASE_URL=[url]' to the .env file");
 } else if (process.env.NODE_ENV == "server") {
   const options: https.ServerOptions = {
     key: fs.readFileSync("./server.key"),
@@ -57,13 +57,13 @@ if (!process.env.NODE_ENV) {
   };
 
   https.createServer(options, app).listen(process.env.PORT, () => {
-    console.log(`Server started at port ${process.env.PORT}`);
+    logger.info(`Server started at port ${process.env.PORT}`);
   });
 } else if (process.env.NODE_ENV == "development") {
   app.listen(process.env.PORT, () => {
-    console.log(`=================================`);
-    console.log(`======= ENV: ${process.env.NODE_ENV} =======`);
-    console.log(`🚀 App listening on the port ${process.env.PORT}`);
-    console.log(`=================================`);
+    logger.info(`=================================`);
+    logger.info(`======= ENV: ${process.env.NODE_ENV} =======`);
+    logger.info(`🚀 App listening on the port ${process.env.PORT}`);
+    logger.info(`=================================`);
   });
 }
