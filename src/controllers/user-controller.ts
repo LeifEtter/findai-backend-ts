@@ -30,8 +30,8 @@ const getProfileById = async (req: Request, res: Response) => {
 
 const getProfile = async (req: Request, res: Response) => {
   try {
-    req.body.user["password"] = "-- redacted --";
-    return res.status(200).send({ profile: req.body.user });
+    res.locals.user["password"] = "-- redacted --";
+    return res.status(200).send({ profile: res.locals.user });
   } catch (error) {
     logger.error(error);
     return res
@@ -140,7 +140,7 @@ const verify = async (req: Request, res: Response) => {
 
 const deleteSelf = async (req: Request, res: Response) => {
   try {
-    await prisma.user.delete({ where: { id: req.body.user.id } });
+    await prisma.user.delete({ where: { id: res.locals.user.id } });
     return res.status(200).send({ message: "Account deleted successfully" });
   } catch (error) {
     console.error(error);
@@ -169,7 +169,7 @@ const deleteUserById = async (req: Request, res: Response) => {
 
 const updateProfile = async (req: Request, res: Response) => {
   try {
-    if (req.body.email && req.body.email != req.body.user.email) {
+    if (req.body.email && req.body.email != res.locals.email) {
       return res.status(400).send({
         message:
           "Please use the 'users/update/email' route to change your email ",
@@ -177,7 +177,7 @@ const updateProfile = async (req: Request, res: Response) => {
     }
     const user = await prisma.user.update({
       where: {
-        id: req.body.user.id,
+        id: res.locals.user.id,
       },
       data: {
         ...(req.body.biography && { biography: req.body.biography }),

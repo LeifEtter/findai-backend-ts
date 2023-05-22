@@ -46,7 +46,7 @@ const authentication = async (
           "Your account is still unverified, please verify under 'users/verify' with the code provided by email, before accessing routes that require authentication",
       });
     }
-    req.body.user = user;
+    res.locals.user = user;
     next();
   } catch (error) {
     return res.status(403).send({

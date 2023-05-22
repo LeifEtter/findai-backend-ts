@@ -9,7 +9,7 @@ const roleLevel = {
 
 const minRole =
   (role: Role) => async (req: Request, res: Response, next: NextFunction) => {
-    const user: User = req.body.user;
+    const user: User = res.locals.user;
     if (roleLevel[user.role] >= roleLevel[role]) {
       next();
     } else {
