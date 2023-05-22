@@ -100,7 +100,6 @@ const login = async (req: Request, res: Response) => {
         process.env.JWT_SECRET!,
         {
           algorithm: "HS256",
-          //TODO Change jwt expiry
           expiresIn: "2h",
         }
       );
