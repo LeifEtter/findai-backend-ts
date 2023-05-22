@@ -1,8 +1,8 @@
-import { NextFunction, Request, Response } from "express";
+import { Request, Response } from "express";
 import jwt from "jsonwebtoken";
 import prisma from "../db";
 import bcrypt from "bcrypt";
-import { Prisma, Role, User } from "@prisma/client";
+import { Prisma, Role } from "@prisma/client";
 import { sendEmail } from "../helpers/email";
 import logger from "../logger";
 const saltRounds = 10;
@@ -27,12 +27,14 @@ const getProfileById = async (req: Request, res: Response) => {
   }
 };
 
-const getUserProfile = async (req: Request, res: Response) => {
+const getProfile = async (req: Request, res: Response) => {
   try {
-    logger.info(req.body.userId);
-    return res.status(200).send({ message: "Profile" });
+    return res.status(200).send({ profile: req.body.user });
   } catch (error) {
     logger.error(error);
+    return res
+      .status(500)
+      .send({ message: "Something went wrong while getting your profile" });
   }
 };
 
@@ -164,7 +166,7 @@ const deleteUserById = async (req: Request, res: Response) => {
 
 export {
   getProfileById,
-  getUserProfile,
+  getProfile,
   login,
   register,
   verify,
