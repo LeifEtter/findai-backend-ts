@@ -124,6 +124,7 @@ const getSingleToolById = async (req: Request, res: Response) => {
 const getToolsByQuery = async (req: Request, res: Response) => {
   try {
     const tags = convertQueryToList(req.query.tag);
+    console.log(tags);
     const order: string | undefined = req.query.sort as string | undefined;
 
     let some: object = {};
@@ -136,7 +137,7 @@ const getToolsByQuery = async (req: Request, res: Response) => {
     const result = await prisma.tool.findMany({
       where: {
         tags: {
-          some,
+          ...(some && { some: some }),
         },
       },
       orderBy,
