@@ -1,4 +1,3 @@
-import { profile } from "console";
 import Joi from "joi";
 
 const createTool = Joi.object({
