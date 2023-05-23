@@ -1,0 +1,22 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = __importDefault(require("express"));
+const user_controller_1 = require("../controllers/user-controller");
+const validation_1 = __importDefault(require("../helpers/validation"));
+const validator_schemas_1 = __importDefault(require("../helpers/validator-schemas"));
+const client_1 = require("@prisma/client");
+const authorization_1 = __importDefault(require("../helpers/authorization"));
+const authentication_1 = __importDefault(require("../helpers/authentication"));
+const userRouter = express_1.default.Router();
+userRouter.route("/profile").get(authentication_1.default, user_controller_1.getProfile);
+userRouter.route("/").patch(authentication_1.default, (0, validation_1.default)(validator_schemas_1.default.updateProfile), user_controller_1.updateProfile);
+userRouter.route("/profile/:id").get(authentication_1.default, (0, authorization_1.default)(client_1.Role.ADMIN), user_controller_1.getProfileById);
+userRouter.route("/login").get((0, validation_1.default)(validator_schemas_1.default.login), user_controller_1.login);
+userRouter.route("/register").post((0, validation_1.default)(validator_schemas_1.default.register), user_controller_1.register);
+userRouter.route("/verify").patch((0, validation_1.default)(validator_schemas_1.default.verify), user_controller_1.verify);
+userRouter.route("/deleteSelf").delete(user_controller_1.deleteSelf);
+userRouter.route("/:id").delete(authentication_1.default, (0, authorization_1.default)(client_1.Role.ADMIN), user_controller_1.deleteUserById);
+exports.default = userRouter;
