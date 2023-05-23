@@ -1,0 +1,784 @@
+{"level":30,"time":1684762317143,"pid":73310,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684762317144,"pid":73310,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684762317144,"pid":73310,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684762317144,"pid":73310,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684762338108,"pid":73426,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684762338108,"pid":73426,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684762338108,"pid":73426,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684762338108,"pid":73426,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684762374418,"pid":73550,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684762374418,"pid":73550,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684762374418,"pid":73550,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684762374418,"pid":73550,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684762376265,"pid":73630,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684762376265,"pid":73630,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684762376265,"pid":73630,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684762376265,"pid":73630,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684762415996,"pid":73750,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684762415996,"pid":73750,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684762415996,"pid":73750,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684762415996,"pid":73750,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684764155759,"pid":76173,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684764155759,"pid":76173,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684764155759,"pid":76173,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684764155759,"pid":76173,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684764224267,"pid":76438,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684764224267,"pid":76438,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684764224267,"pid":76438,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684764224267,"pid":76438,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684766719576,"pid":79441,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684766719576,"pid":79441,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684766719576,"pid":79441,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684766719576,"pid":79441,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684766721299,"pid":79441,"hostname":"Leifs-MacBook-Pro-2.local","msg":1}
+{"level":30,"time":1684766748282,"pid":79561,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684766748282,"pid":79561,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684766748282,"pid":79561,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684766748282,"pid":79561,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684766780297,"pid":79678,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684766780297,"pid":79678,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684766780297,"pid":79678,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684766780297,"pid":79678,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684766781894,"pid":79678,"hostname":"Leifs-MacBook-Pro-2.local","msg":1}
+{"level":30,"time":1684766788766,"pid":79767,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684766788767,"pid":79767,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684766788767,"pid":79767,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684766788767,"pid":79767,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684766954884,"pid":80220,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684766954884,"pid":80220,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684766954884,"pid":80220,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684766954884,"pid":80220,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684766974330,"pid":80317,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684766974330,"pid":80317,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684766974330,"pid":80317,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684766974330,"pid":80317,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684766993185,"pid":80423,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684766993186,"pid":80423,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684766993186,"pid":80423,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684766993186,"pid":80423,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684767004676,"pid":80585,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684767004676,"pid":80585,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684767004676,"pid":80585,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684767004676,"pid":80585,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684767009631,"pid":80585,"hostname":"Leifs-MacBook-Pro-2.local","msg":1}
+{"level":30,"time":1684767019250,"pid":80680,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684767019250,"pid":80680,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684767019250,"pid":80680,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684767019250,"pid":80680,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684767020875,"pid":80680,"hostname":"Leifs-MacBook-Pro-2.local","msg":1}
+{"level":30,"time":1684767042622,"pid":80788,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684767042622,"pid":80788,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684767042622,"pid":80788,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684767042622,"pid":80788,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684767043642,"pid":80788,"hostname":"Leifs-MacBook-Pro-2.local","msg":1}
+{"level":30,"time":1684767151610,"pid":80989,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684767151610,"pid":80989,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684767151610,"pid":80989,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684767151610,"pid":80989,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684767448933,"pid":81407,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684767448933,"pid":81407,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684767448933,"pid":81407,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684767448933,"pid":81407,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684767460993,"pid":81546,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684767460993,"pid":81546,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684767460993,"pid":81546,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684767460993,"pid":81546,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684767463771,"pid":81631,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684767463772,"pid":81631,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684767463772,"pid":81631,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684767463772,"pid":81631,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684767471891,"pid":81734,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684767471892,"pid":81734,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684767471892,"pid":81734,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684767471892,"pid":81734,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684767479676,"pid":81822,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684767479677,"pid":81822,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684767479677,"pid":81822,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684767479677,"pid":81822,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684768062363,"pid":82733,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684768062363,"pid":82733,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684768062363,"pid":82733,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684768062363,"pid":82733,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684768072576,"pid":82820,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684768072576,"pid":82820,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684768072576,"pid":82820,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684768072576,"pid":82820,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":50,"time":1684768075031,"pid":82820,"hostname":"Leifs-MacBook-Pro-2.local","err":{"type":"PrismaClientKnownRequestError","message":"\nInvalid `prisma.user.delete()` invocation in\n/Users/leifetter/Github/findai-backend-ts/src/controllers/user-controller.ts:134:29\n\n  131 \n  132 const deleteUser = async (req: Request, res: Response) => {\n  133   try {\n→ 134     await prisma.user.delete(\nAn operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.","stack":"Error: \nInvalid `prisma.user.delete()` invocation in\n/Users/leifetter/Github/findai-backend-ts/src/controllers/user-controller.ts:134:29\n\n  131 \n  132 const deleteUser = async (req: Request, res: Response) => {\n  133   try {\n→ 134     await prisma.user.delete(\nAn operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.\n    at Pn.handleRequestError (/Users/leifetter/Github/findai-backend-ts/node_modules/@prisma/client/runtime/library.js:171:6929)\n    at Pn.handleAndLogRequestError (/Users/leifetter/Github/findai-backend-ts/node_modules/@prisma/client/runtime/library.js:171:6358)\n    at Pn.request (/Users/leifetter/Github/findai-backend-ts/node_modules/@prisma/client/runtime/library.js:171:6237)","code":"P2025","clientVersion":"4.14.0","meta":{"cause":"Record to delete does not exist."}},"msg":"\nInvalid `prisma.user.delete()` invocation in\n/Users/leifetter/Github/findai-backend-ts/src/controllers/user-controller.ts:134:29\n\n  131 \n  132 const deleteUser = async (req: Request, res: Response) => {\n  133   try {\n→ 134     await prisma.user.delete(\nAn operation failed because it depends on one or more records that were required but not found. Record to delete does not exist."}
+{"level":30,"time":1684768242830,"pid":83114,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684768242830,"pid":83114,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684768242830,"pid":83114,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684768242830,"pid":83114,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684768264219,"pid":83226,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684768264219,"pid":83226,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684768264219,"pid":83226,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684768264219,"pid":83226,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684768359191,"pid":83448,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684768359191,"pid":83448,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684768359191,"pid":83448,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684768359191,"pid":83448,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684768758341,"pid":84997,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684768758341,"pid":84997,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684768758341,"pid":84997,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684768758341,"pid":84997,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684768839010,"pid":85402,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684768839010,"pid":85402,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684768839010,"pid":85402,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684768839010,"pid":85402,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684769123308,"pid":85935,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684769123308,"pid":85935,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684769123308,"pid":85935,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684769123308,"pid":85935,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684769145095,"pid":86041,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684769145095,"pid":86041,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684769145095,"pid":86041,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684769145095,"pid":86041,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684769154282,"pid":86134,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684769154282,"pid":86134,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684769154282,"pid":86134,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684769154282,"pid":86134,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684769162908,"pid":86228,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684769162908,"pid":86228,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684769162908,"pid":86228,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684769162908,"pid":86228,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782323689,"pid":91837,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782323689,"pid":91837,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684782323689,"pid":91837,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684782323689,"pid":91837,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782430481,"pid":92020,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782430481,"pid":92020,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684782430481,"pid":92020,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684782430481,"pid":92020,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782464900,"pid":92135,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782464900,"pid":92135,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684782464900,"pid":92135,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684782464900,"pid":92135,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782481418,"pid":92236,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782481419,"pid":92236,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684782481419,"pid":92236,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684782481419,"pid":92236,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782482980,"pid":92315,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782482980,"pid":92315,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684782482980,"pid":92315,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684782482980,"pid":92315,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782489218,"pid":92403,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782489218,"pid":92403,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684782489218,"pid":92403,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684782489218,"pid":92403,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782493550,"pid":92488,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782493551,"pid":92488,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684782493551,"pid":92488,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684782493551,"pid":92488,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782510864,"pid":92609,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782510865,"pid":92609,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684782510865,"pid":92609,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684782510865,"pid":92609,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782522925,"pid":92747,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782522925,"pid":92747,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684782522925,"pid":92747,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684782522925,"pid":92747,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782570690,"pid":92881,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782570690,"pid":92881,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684782570690,"pid":92881,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684782570690,"pid":92881,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782705598,"pid":93520,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782705598,"pid":93520,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684782705598,"pid":93520,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684782705598,"pid":93520,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782710619,"pid":93607,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782710619,"pid":93607,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684782710619,"pid":93607,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684782710619,"pid":93607,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782715205,"pid":93684,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782715205,"pid":93684,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684782715205,"pid":93684,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684782715205,"pid":93684,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782721024,"pid":93775,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782721024,"pid":93775,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684782721024,"pid":93775,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684782721024,"pid":93775,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782722778,"pid":93849,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782722778,"pid":93849,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684782722778,"pid":93849,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684782722778,"pid":93849,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782735147,"pid":94013,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782735147,"pid":94013,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684782735147,"pid":94013,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684782735147,"pid":94013,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782740825,"pid":94097,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782740825,"pid":94097,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684782740825,"pid":94097,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684782740825,"pid":94097,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782808388,"pid":94328,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782808388,"pid":94328,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684782808388,"pid":94328,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684782808388,"pid":94328,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782895981,"pid":94540,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782895982,"pid":94540,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684782895982,"pid":94540,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684782895982,"pid":94540,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782949722,"pid":94695,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782949722,"pid":94695,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684782949722,"pid":94695,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684782949722,"pid":94695,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782974206,"pid":94820,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684782974206,"pid":94820,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684782974206,"pid":94820,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684782974206,"pid":94820,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684783105166,"pid":95079,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684783105166,"pid":95079,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684783105166,"pid":95079,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684783105166,"pid":95079,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684783327766,"pid":95504,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684783327766,"pid":95504,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684783327766,"pid":95504,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684783327766,"pid":95504,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684783329948,"pid":95583,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684783329948,"pid":95583,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684783329948,"pid":95583,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684783329948,"pid":95583,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684783407499,"pid":95826,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684783407499,"pid":95826,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684783407499,"pid":95826,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684783407499,"pid":95826,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684783429624,"pid":95936,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684783429624,"pid":95936,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684783429624,"pid":95936,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684783429624,"pid":95936,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684783466614,"pid":96066,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684783466614,"pid":96066,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684783466614,"pid":96066,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684783466614,"pid":96066,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684783473306,"pid":96154,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684783473306,"pid":96154,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684783473306,"pid":96154,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684783473306,"pid":96154,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684783501419,"pid":96283,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684783501419,"pid":96283,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684783501419,"pid":96283,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684783501419,"pid":96283,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684783717140,"pid":96882,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684783717140,"pid":96882,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684783717140,"pid":96882,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684783717140,"pid":96882,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684784246213,"pid":97701,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684784246214,"pid":97701,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684784246214,"pid":97701,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684784246214,"pid":97701,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684784247494,"pid":97792,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684784247494,"pid":97792,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684784247494,"pid":97792,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684784247494,"pid":97792,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684784369392,"pid":98057,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684784369392,"pid":98057,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684784369392,"pid":98057,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684784369392,"pid":98057,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684784373801,"pid":98143,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684784373802,"pid":98143,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684784373802,"pid":98143,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684784373802,"pid":98143,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684784405665,"pid":98316,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684784405665,"pid":98316,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684784405665,"pid":98316,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684784405665,"pid":98316,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785239576,"pid":1251,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785239577,"pid":1251,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684785239577,"pid":1251,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684785239577,"pid":1251,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785247185,"pid":1381,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785247185,"pid":1381,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684785247185,"pid":1381,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684785247185,"pid":1381,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785263750,"pid":1476,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785263750,"pid":1476,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684785263750,"pid":1476,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684785263750,"pid":1476,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785292363,"pid":1595,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785292363,"pid":1595,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684785292363,"pid":1595,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684785292363,"pid":1595,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785293508,"pid":1677,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785293508,"pid":1677,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684785293508,"pid":1677,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684785293508,"pid":1677,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785312350,"pid":1776,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785312350,"pid":1776,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684785312350,"pid":1776,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684785312350,"pid":1776,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785341426,"pid":1886,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785341427,"pid":1886,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684785341427,"pid":1886,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684785341427,"pid":1886,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785354466,"pid":1983,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785354466,"pid":1983,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684785354466,"pid":1983,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684785354466,"pid":1983,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785358006,"pid":2064,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785358006,"pid":2064,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684785358006,"pid":2064,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684785358006,"pid":2064,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785389062,"pid":2179,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785389062,"pid":2179,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684785389062,"pid":2179,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684785389062,"pid":2179,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785398874,"pid":2273,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785398875,"pid":2273,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684785398875,"pid":2273,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684785398875,"pid":2273,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785408477,"pid":2368,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785408477,"pid":2368,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684785408477,"pid":2368,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684785408477,"pid":2368,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785450450,"pid":2537,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785450450,"pid":2537,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684785450450,"pid":2537,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684785450450,"pid":2537,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785663158,"pid":2896,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785663159,"pid":2896,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684785663159,"pid":2896,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684785663159,"pid":2896,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785680153,"pid":3024,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785680153,"pid":3024,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684785680153,"pid":3024,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684785680153,"pid":3024,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785803193,"pid":3239,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785803193,"pid":3239,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684785803193,"pid":3239,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684785803193,"pid":3239,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785819536,"pid":3350,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785819537,"pid":3350,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684785819537,"pid":3350,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684785819537,"pid":3350,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785932042,"pid":3574,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785932042,"pid":3574,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684785932042,"pid":3574,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684785932042,"pid":3574,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785934710,"pid":3669,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785934711,"pid":3669,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684785934711,"pid":3669,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684785934711,"pid":3669,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785937137,"pid":3744,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785937137,"pid":3744,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684785937137,"pid":3744,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684785937137,"pid":3744,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785946619,"pid":3835,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785946619,"pid":3835,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684785946619,"pid":3835,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684785946619,"pid":3835,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785968005,"pid":3936,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684785968006,"pid":3936,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684785968006,"pid":3936,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684785968006,"pid":3936,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684786037943,"pid":4108,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684786037943,"pid":4108,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684786037943,"pid":4108,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684786037943,"pid":4108,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684786049272,"pid":4245,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684786049273,"pid":4245,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684786049273,"pid":4245,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684786049273,"pid":4245,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684786099562,"pid":4384,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684786099563,"pid":4384,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684786099563,"pid":4384,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684786099563,"pid":4384,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684786193512,"pid":4580,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684786193512,"pid":4580,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684786193512,"pid":4580,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684786193512,"pid":4580,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684786200752,"pid":4683,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684786200752,"pid":4683,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684786200752,"pid":4683,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684786200752,"pid":4683,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684786206846,"pid":4766,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684786206846,"pid":4766,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684786206846,"pid":4766,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684786206846,"pid":4766,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684786217888,"pid":4859,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684786217888,"pid":4859,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684786217888,"pid":4859,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684786217888,"pid":4859,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684786233326,"pid":4977,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684786233326,"pid":4977,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684786233326,"pid":4977,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684786233326,"pid":4977,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684786522413,"pid":5377,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684786522413,"pid":5377,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684786522413,"pid":5377,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684786522413,"pid":5377,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684786539169,"pid":5503,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684786539170,"pid":5503,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684786539170,"pid":5503,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684786539170,"pid":5503,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684786547091,"pid":5600,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684786547091,"pid":5600,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684786547091,"pid":5600,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684786547091,"pid":5600,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684786549027,"pid":5677,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684786549027,"pid":5677,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684786549027,"pid":5677,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684786549027,"pid":5677,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684787088396,"pid":6456,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684787088396,"pid":6456,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684787088396,"pid":6456,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684787088396,"pid":6456,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684787241908,"pid":6747,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684787241908,"pid":6747,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684787241908,"pid":6747,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684787241908,"pid":6747,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684787999892,"pid":8507,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684787999892,"pid":8507,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684787999892,"pid":8507,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684787999892,"pid":8507,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684788086354,"pid":8819,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684788086354,"pid":8819,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684788086354,"pid":8819,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684788086354,"pid":8819,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684788867499,"pid":9844,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684788867499,"pid":9844,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684788867499,"pid":9844,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684788867499,"pid":9844,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684788926204,"pid":10067,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684788926205,"pid":10067,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684788926205,"pid":10067,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684788926205,"pid":10067,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684788941149,"pid":10169,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684788941149,"pid":10169,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684788941149,"pid":10169,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684788941149,"pid":10169,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684788951323,"pid":10265,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684788951324,"pid":10265,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684788951324,"pid":10265,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684788951324,"pid":10265,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684788973938,"pid":10420,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684788973938,"pid":10420,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684788973938,"pid":10420,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684788973938,"pid":10420,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684788986505,"pid":10514,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684788986505,"pid":10514,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684788986505,"pid":10514,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684788986505,"pid":10514,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789185225,"pid":10852,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789185225,"pid":10852,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684789185225,"pid":10852,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684789185225,"pid":10852,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789200446,"pid":10950,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789200446,"pid":10950,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684789200446,"pid":10950,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684789200446,"pid":10950,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789208084,"pid":11039,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789208084,"pid":11039,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684789208084,"pid":11039,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684789208084,"pid":11039,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789229493,"pid":11189,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789229493,"pid":11189,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684789229493,"pid":11189,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684789229493,"pid":11189,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789254969,"pid":11305,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789254970,"pid":11305,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684789254970,"pid":11305,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684789254970,"pid":11305,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789266341,"pid":11400,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789266341,"pid":11400,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684789266341,"pid":11400,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684789266341,"pid":11400,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789278051,"pid":11518,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789278051,"pid":11518,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684789278051,"pid":11518,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684789278051,"pid":11518,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789282437,"pid":11606,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789282438,"pid":11606,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684789282438,"pid":11606,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684789282438,"pid":11606,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789408206,"pid":11909,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789408206,"pid":11909,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684789408206,"pid":11909,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684789408206,"pid":11909,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789436078,"pid":12017,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789436078,"pid":12017,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684789436078,"pid":12017,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684789436078,"pid":12017,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789455333,"pid":12118,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789455333,"pid":12118,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684789455333,"pid":12118,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684789455333,"pid":12118,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":50,"time":1684789458214,"pid":12118,"hostname":"Leifs-MacBook-Pro-2.local","err":{"type":"PrismaClientValidationError","message":"\nInvalid `prisma.tool.findMany()` invocation in\n/Users/leifetter/Github/findai-backend-ts/src/controllers/tool-controller.ts:139:38\n\n  136 \n  137 const orderBy = convertOrderQueryToOrderObject(order);\n  138 \n→ 139 const result = await prisma.tool.findMany({\n        where: {\n          tags: {\n            some: []\n            ~~\n          }\n        },\n        orderBy: {}\n      })\n\nArgument some: Got invalid value [] on prisma.findManyTool. Provided List<>, expected TagWhereInput:\ntype TagWhereInput {\n  AND?: TagWhereInput | List<TagWhereInput>\n  OR?: List<TagWhereInput>\n  NOT?: TagWhereInput | List<TagWhereInput>\n  id?: StringFilter | String\n  name?: StringFilter | String\n  synced?: BoolFilter | Boolean\n  creationDate?: DateTimeFilter | DateTime\n  tools?: ToolListRelationFilter\n}\n\n","stack":"Error: \nInvalid `prisma.tool.findMany()` invocation in\n/Users/leifetter/Github/findai-backend-ts/src/controllers/tool-controller.ts:139:38\n\n  136 \n  137 const orderBy = convertOrderQueryToOrderObject(order);\n  138 \n→ 139 const result = await prisma.tool.findMany({\n        where: {\n          tags: {\n            some: []\n            ~~\n          }\n        },\n        orderBy: {}\n      })\n\nArgument some: Got invalid value [] on prisma.findManyTool. Provided List<>, expected TagWhereInput:\ntype TagWhereInput {\n  AND?: TagWhereInput | List<TagWhereInput>\n  OR?: List<TagWhereInput>\n  NOT?: TagWhereInput | List<TagWhereInput>\n  id?: StringFilter | String\n  name?: StringFilter | String\n  synced?: BoolFilter | Boolean\n  creationDate?: DateTimeFilter | DateTime\n  tools?: ToolListRelationFilter\n}\n\n\n    at Ai.validate (/Users/leifetter/Github/findai-backend-ts/node_modules/@prisma/client/runtime/library.js:144:73)\n    at un.createMessage (/Users/leifetter/Github/findai-backend-ts/node_modules/@prisma/client/runtime/library.js:161:1298)\n    at /Users/leifetter/Github/findai-backend-ts/node_modules/@prisma/client/runtime/library.js:174:10818\n    at Object.runInChildSpan (/Users/leifetter/Github/findai-backend-ts/node_modules/@prisma/client/runtime/library.js:171:1343)\n    at t._executeRequest (/Users/leifetter/Github/findai-backend-ts/node_modules/@prisma/client/runtime/library.js:174:10795)","clientVersion":"4.14.0"},"msg":"\nInvalid `prisma.tool.findMany()` invocation in\n/Users/leifetter/Github/findai-backend-ts/src/controllers/tool-controller.ts:139:38\n\n  136 \n  137 const orderBy = convertOrderQueryToOrderObject(order);\n  138 \n→ 139 const result = await prisma.tool.findMany({\n        where: {\n          tags: {\n            some: []\n            ~~\n          }\n        },\n        orderBy: {}\n      })\n\nArgument some: Got invalid value [] on prisma.findManyTool. Provided List<>, expected TagWhereInput:\ntype TagWhereInput {\n  AND?: TagWhereInput | List<TagWhereInput>\n  OR?: List<TagWhereInput>\n  NOT?: TagWhereInput | List<TagWhereInput>\n  id?: StringFilter | String\n  name?: StringFilter | String\n  synced?: BoolFilter | Boolean\n  creationDate?: DateTimeFilter | DateTime\n  tools?: ToolListRelationFilter\n}\n\n"}
+{"level":30,"time":1684789514338,"pid":12420,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789514338,"pid":12420,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684789514338,"pid":12420,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684789514338,"pid":12420,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789535967,"pid":12521,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789535967,"pid":12521,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684789535967,"pid":12521,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684789535967,"pid":12521,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789538945,"pid":12604,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789538945,"pid":12604,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684789538945,"pid":12604,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684789538945,"pid":12604,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789541932,"pid":12684,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789541932,"pid":12684,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684789541932,"pid":12684,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684789541932,"pid":12684,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789569891,"pid":12809,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789569892,"pid":12809,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684789569892,"pid":12809,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684789569892,"pid":12809,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789587148,"pid":12927,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789587148,"pid":12927,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684789587148,"pid":12927,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684789587148,"pid":12927,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789591594,"pid":13010,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789591594,"pid":13010,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684789591594,"pid":13010,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684789591594,"pid":13010,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789599709,"pid":13097,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789599709,"pid":13097,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684789599709,"pid":13097,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684789599709,"pid":13097,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789607430,"pid":13181,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789607430,"pid":13181,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684789607430,"pid":13181,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684789607430,"pid":13181,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789614135,"pid":13291,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789614135,"pid":13291,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684789614135,"pid":13291,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684789614135,"pid":13291,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789634266,"pid":13395,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789634266,"pid":13395,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684789634266,"pid":13395,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684789634266,"pid":13395,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789680248,"pid":13555,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789680248,"pid":13555,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684789680248,"pid":13555,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684789680248,"pid":13555,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":50,"time":1684789690997,"pid":13555,"hostname":"Leifs-MacBook-Pro-2.local","err":{"type":"PrismaClientValidationError","message":"\nInvalid `prisma.tool.findMany()` invocation in\n/Users/leifetter/Github/findai-backend-ts/src/controllers/tool-controller.ts:137:38\n\n  134 \n  135 const orderBy = convertOrderQueryToOrderObject(order);\n  136 \n→ 137 const result = await prisma.tool.findMany({\n        where: {\n          tags: {\n            OR: [\n            ~~\n              {\n                name: 'text'\n              }\n            ]\n          }\n        },\n        orderBy: {}\n      })\n\nUnknown arg `OR` in where.tags.OR for type TagListRelationFilter. Available args:\n\ntype TagListRelationFilter {\n  every?: TagWhereInput\n  some?: TagWhereInput\n  none?: TagWhereInput\n}\n\n","stack":"Error: \nInvalid `prisma.tool.findMany()` invocation in\n/Users/leifetter/Github/findai-backend-ts/src/controllers/tool-controller.ts:137:38\n\n  134 \n  135 const orderBy = convertOrderQueryToOrderObject(order);\n  136 \n→ 137 const result = await prisma.tool.findMany({\n        where: {\n          tags: {\n            OR: [\n            ~~\n              {\n                name: 'text'\n              }\n            ]\n          }\n        },\n        orderBy: {}\n      })\n\nUnknown arg `OR` in where.tags.OR for type TagListRelationFilter. Available args:\n\ntype TagListRelationFilter {\n  every?: TagWhereInput\n  some?: TagWhereInput\n  none?: TagWhereInput\n}\n\n\n    at Ai.validate (/Users/leifetter/Github/findai-backend-ts/node_modules/@prisma/client/runtime/library.js:144:73)\n    at un.createMessage (/Users/leifetter/Github/findai-backend-ts/node_modules/@prisma/client/runtime/library.js:161:1298)\n    at /Users/leifetter/Github/findai-backend-ts/node_modules/@prisma/client/runtime/library.js:174:10818\n    at Object.runInChildSpan (/Users/leifetter/Github/findai-backend-ts/node_modules/@prisma/client/runtime/library.js:171:1343)\n    at t._executeRequest (/Users/leifetter/Github/findai-backend-ts/node_modules/@prisma/client/runtime/library.js:174:10795)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","clientVersion":"4.14.0"},"msg":"\nInvalid `prisma.tool.findMany()` invocation in\n/Users/leifetter/Github/findai-backend-ts/src/controllers/tool-controller.ts:137:38\n\n  134 \n  135 const orderBy = convertOrderQueryToOrderObject(order);\n  136 \n→ 137 const result = await prisma.tool.findMany({\n        where: {\n          tags: {\n            OR: [\n            ~~\n              {\n                name: 'text'\n              }\n            ]\n          }\n        },\n        orderBy: {}\n      })\n\nUnknown arg `OR` in where.tags.OR for type TagListRelationFilter. Available args:\n\ntype TagListRelationFilter {\n  every?: TagWhereInput\n  some?: TagWhereInput\n  none?: TagWhereInput\n}\n\n"}
+{"level":30,"time":1684789735524,"pid":13698,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789735524,"pid":13698,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684789735524,"pid":13698,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684789735524,"pid":13698,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789737754,"pid":13780,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789737754,"pid":13780,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684789737754,"pid":13780,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684789737754,"pid":13780,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789791890,"pid":13912,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789791891,"pid":13912,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684789791891,"pid":13912,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684789791891,"pid":13912,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789819416,"pid":14038,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789819416,"pid":14038,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684789819416,"pid":14038,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684789819416,"pid":14038,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789828505,"pid":14143,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789828505,"pid":14143,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684789828505,"pid":14143,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684789828505,"pid":14143,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789843272,"pid":14275,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684789843272,"pid":14275,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684789843272,"pid":14275,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684789843272,"pid":14275,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684790236836,"pid":14895,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684790236837,"pid":14895,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684790236837,"pid":14895,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684790236837,"pid":14895,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684790962686,"pid":16094,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684790962686,"pid":16094,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684790962686,"pid":16094,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684790962686,"pid":16094,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791034364,"pid":16247,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791034365,"pid":16247,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791034365,"pid":16247,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791034365,"pid":16247,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791045881,"pid":16354,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791045881,"pid":16354,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791045881,"pid":16354,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791045881,"pid":16354,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791070297,"pid":16479,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791070297,"pid":16479,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791070297,"pid":16479,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791070297,"pid":16479,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791073998,"pid":16561,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791073998,"pid":16561,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791073998,"pid":16561,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791073998,"pid":16561,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791077916,"pid":16643,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791077916,"pid":16643,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791077916,"pid":16643,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791077916,"pid":16643,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791083211,"pid":16727,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791083211,"pid":16727,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791083211,"pid":16727,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791083211,"pid":16727,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791119920,"pid":16852,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791119920,"pid":16852,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791119920,"pid":16852,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791119920,"pid":16852,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791125510,"pid":16941,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791125510,"pid":16941,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791125510,"pid":16941,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791125510,"pid":16941,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791159005,"pid":17087,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791159005,"pid":17087,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791159005,"pid":17087,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791159005,"pid":17087,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791164040,"pid":17169,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791164040,"pid":17169,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791164040,"pid":17169,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791164040,"pid":17169,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791170842,"pid":17273,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791170842,"pid":17273,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791170842,"pid":17273,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791170842,"pid":17273,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791266413,"pid":17536,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791266414,"pid":17536,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791266414,"pid":17536,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791266414,"pid":17536,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791293850,"pid":17649,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791293851,"pid":17649,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791293851,"pid":17649,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791293851,"pid":17649,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791327827,"pid":17784,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791327827,"pid":17784,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791327827,"pid":17784,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791327827,"pid":17784,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791339980,"pid":17879,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791339981,"pid":17879,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791339981,"pid":17879,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791339981,"pid":17879,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791360736,"pid":17996,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791360736,"pid":17996,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791360736,"pid":17996,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791360736,"pid":17996,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791386340,"pid":18108,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791386340,"pid":18108,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791386340,"pid":18108,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791386340,"pid":18108,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791394918,"pid":18218,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791394918,"pid":18218,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791394918,"pid":18218,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791394918,"pid":18218,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791406437,"pid":18383,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791406437,"pid":18383,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791406437,"pid":18383,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791406437,"pid":18383,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791418412,"pid":18481,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791418413,"pid":18481,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791418413,"pid":18481,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791418413,"pid":18481,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791420866,"pid":18565,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791420867,"pid":18565,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791420867,"pid":18565,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791420867,"pid":18565,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791628872,"pid":19608,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791628872,"pid":19608,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791628872,"pid":19608,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791628872,"pid":19608,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791637725,"pid":19703,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791637725,"pid":19703,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791637725,"pid":19703,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791637725,"pid":19703,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791683379,"pid":19869,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791683379,"pid":19869,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791683379,"pid":19869,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791683379,"pid":19869,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791724715,"pid":20038,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791724715,"pid":20038,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791724715,"pid":20038,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791724715,"pid":20038,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791816445,"pid":20356,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791816446,"pid":20356,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791816446,"pid":20356,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791816446,"pid":20356,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791819205,"pid":20436,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791819205,"pid":20436,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791819205,"pid":20436,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791819205,"pid":20436,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791837912,"pid":20533,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791837912,"pid":20533,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791837912,"pid":20533,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791837912,"pid":20533,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791867123,"pid":20647,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791867123,"pid":20647,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791867123,"pid":20647,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791867123,"pid":20647,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791873287,"pid":20774,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791873287,"pid":20774,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791873287,"pid":20774,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791873287,"pid":20774,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791909442,"pid":20996,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791909443,"pid":20996,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791909443,"pid":20996,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791909443,"pid":20996,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791959323,"pid":21270,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684791959324,"pid":21270,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684791959324,"pid":21270,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684791959324,"pid":21270,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684792160928,"pid":21640,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684792160928,"pid":21640,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684792160928,"pid":21640,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684792160928,"pid":21640,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684792537294,"pid":22365,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684792537294,"pid":22365,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684792537294,"pid":22365,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684792537294,"pid":22365,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684839054301,"pid":2122,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684839054301,"pid":2122,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684839054301,"pid":2122,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684839054301,"pid":2122,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684839132500,"pid":2216,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684839132500,"pid":2216,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684839132500,"pid":2216,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684839132500,"pid":2216,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":50,"time":1684839136902,"pid":2216,"hostname":"Leifs-MacBook-Pro-2.local","err":{"type":"PrismaClientValidationError","message":"\nInvalid `prisma.user.update()` invocation in\n/Users/leifetter/Github/findai-backend-ts/src/controllers/tool-controller.ts:186:23\n\n  183     .send({ message: \"No tool with that id could be found\" });\n  184 }\n  185 const user: User = res.locals.user.id;\n→ 186 await prisma.user.update({\n        where: {\n      ?   id?: Int,\n      ?   email?: String\n        },\n        data: {\n          bookmarkedTools: {\n            connect: {\n              id: 'rec4WbTokIvLkzzaS'\n            }\n          }\n        }\n      })\n\nArgument where of type UserWhereUniqueInput needs at least one argument. Available args are listed in green.\n\nNote: Lines with ? are optional.\n","stack":"Error: \nInvalid `prisma.user.update()` invocation in\n/Users/leifetter/Github/findai-backend-ts/src/controllers/tool-controller.ts:186:23\n\n  183     .send({ message: \"No tool with that id could be found\" });\n  184 }\n  185 const user: User = res.locals.user.id;\n→ 186 await prisma.user.update({\n        where: {\n      ?   id?: Int,\n      ?   email?: String\n        },\n        data: {\n          bookmarkedTools: {\n            connect: {\n              id: 'rec4WbTokIvLkzzaS'\n            }\n          }\n        }\n      })\n\nArgument where of type UserWhereUniqueInput needs at least one argument. Available args are listed in green.\n\nNote: Lines with ? are optional.\n\n    at Ai.validate (/Users/leifetter/Github/findai-backend-ts/node_modules/@prisma/client/runtime/library.js:144:73)\n    at un.createMessage (/Users/leifetter/Github/findai-backend-ts/node_modules/@prisma/client/runtime/library.js:161:1298)\n    at /Users/leifetter/Github/findai-backend-ts/node_modules/@prisma/client/runtime/library.js:174:10818\n    at Object.runInChildSpan (/Users/leifetter/Github/findai-backend-ts/node_modules/@prisma/client/runtime/library.js:171:1343)\n    at t._executeRequest (/Users/leifetter/Github/findai-backend-ts/node_modules/@prisma/client/runtime/library.js:174:10795)","clientVersion":"4.14.0"},"msg":"\nInvalid `prisma.user.update()` invocation in\n/Users/leifetter/Github/findai-backend-ts/src/controllers/tool-controller.ts:186:23\n\n  183     .send({ message: \"No tool with that id could be found\" });\n  184 }\n  185 const user: User = res.locals.user.id;\n→ 186 await prisma.user.update({\n        where: {\n      ?   id?: Int,\n      ?   email?: String\n        },\n        data: {\n          bookmarkedTools: {\n            connect: {\n              id: 'rec4WbTokIvLkzzaS'\n            }\n          }\n        }\n      })\n\nArgument where of type UserWhereUniqueInput needs at least one argument. Available args are listed in green.\n\nNote: Lines with ? are optional.\n"}
+{"level":30,"time":1684839211110,"pid":2328,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684839211111,"pid":2328,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684839211111,"pid":2328,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684839211111,"pid":2328,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684839225501,"pid":2411,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684839225501,"pid":2411,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684839225501,"pid":2411,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684839225501,"pid":2411,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684839240799,"pid":2491,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684839240799,"pid":2491,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684839240799,"pid":2491,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684839240799,"pid":2491,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":50,"time":1684839258371,"pid":2491,"hostname":"Leifs-MacBook-Pro-2.local","err":{"type":"PrismaClientValidationError","message":"\nInvalid `prisma.user.update()` invocation in\n/Users/leifetter/Github/findai-backend-ts/src/controllers/tool-controller.ts:212:23\n\n  209     .send({ message: \"No tool with that id could be found\" });\n  210 }\n  211 const user: User = res.locals.user.id;\n→ 212 await prisma.user.update({\n        where: {\n      ?   id?: Int,\n      ?   email?: String\n        },\n        data: {\n          bookmarkedTools: {\n            connect: {\n              id: 'rec4WbTokIvLkzzaS'\n            }\n          }\n        }\n      })\n\nArgument where of type UserWhereUniqueInput needs at least one argument. Available args are listed in green.\n\nNote: Lines with ? are optional.\n","stack":"Error: \nInvalid `prisma.user.update()` invocation in\n/Users/leifetter/Github/findai-backend-ts/src/controllers/tool-controller.ts:212:23\n\n  209     .send({ message: \"No tool with that id could be found\" });\n  210 }\n  211 const user: User = res.locals.user.id;\n→ 212 await prisma.user.update({\n        where: {\n      ?   id?: Int,\n      ?   email?: String\n        },\n        data: {\n          bookmarkedTools: {\n            connect: {\n              id: 'rec4WbTokIvLkzzaS'\n            }\n          }\n        }\n      })\n\nArgument where of type UserWhereUniqueInput needs at least one argument. Available args are listed in green.\n\nNote: Lines with ? are optional.\n\n    at Ai.validate (/Users/leifetter/Github/findai-backend-ts/node_modules/@prisma/client/runtime/library.js:144:73)\n    at un.createMessage (/Users/leifetter/Github/findai-backend-ts/node_modules/@prisma/client/runtime/library.js:161:1298)\n    at /Users/leifetter/Github/findai-backend-ts/node_modules/@prisma/client/runtime/library.js:174:10818\n    at Object.runInChildSpan (/Users/leifetter/Github/findai-backend-ts/node_modules/@prisma/client/runtime/library.js:171:1343)\n    at t._executeRequest (/Users/leifetter/Github/findai-backend-ts/node_modules/@prisma/client/runtime/library.js:174:10795)","clientVersion":"4.14.0"},"msg":"\nInvalid `prisma.user.update()` invocation in\n/Users/leifetter/Github/findai-backend-ts/src/controllers/tool-controller.ts:212:23\n\n  209     .send({ message: \"No tool with that id could be found\" });\n  210 }\n  211 const user: User = res.locals.user.id;\n→ 212 await prisma.user.update({\n        where: {\n      ?   id?: Int,\n      ?   email?: String\n        },\n        data: {\n          bookmarkedTools: {\n            connect: {\n              id: 'rec4WbTokIvLkzzaS'\n            }\n          }\n        }\n      })\n\nArgument where of type UserWhereUniqueInput needs at least one argument. Available args are listed in green.\n\nNote: Lines with ? are optional.\n"}
+{"level":30,"time":1684839294382,"pid":2583,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684839294382,"pid":2583,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684839294382,"pid":2583,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684839294382,"pid":2583,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":50,"time":1684839295245,"pid":2583,"hostname":"Leifs-MacBook-Pro-2.local","err":{"type":"PrismaClientValidationError","message":"\nInvalid `prisma.user.update()` invocation in\n/Users/leifetter/Github/findai-backend-ts/src/controllers/tool-controller.ts:213:23\n\n  210 }\n  211 const user: User = res.locals.user.id;\n  212 console.log(user);\n→ 213 await prisma.user.update({\n        where: {\n      ?   id?: Int,\n      ?   email?: String\n        },\n        data: {\n          bookmarkedTools: {\n            connect: {\n              id: 'rec4WbTokIvLkzzaS'\n            }\n          }\n        }\n      })\n\nArgument where of type UserWhereUniqueInput needs at least one argument. Available args are listed in green.\n\nNote: Lines with ? are optional.\n","stack":"Error: \nInvalid `prisma.user.update()` invocation in\n/Users/leifetter/Github/findai-backend-ts/src/controllers/tool-controller.ts:213:23\n\n  210 }\n  211 const user: User = res.locals.user.id;\n  212 console.log(user);\n→ 213 await prisma.user.update({\n        where: {\n      ?   id?: Int,\n      ?   email?: String\n        },\n        data: {\n          bookmarkedTools: {\n            connect: {\n              id: 'rec4WbTokIvLkzzaS'\n            }\n          }\n        }\n      })\n\nArgument where of type UserWhereUniqueInput needs at least one argument. Available args are listed in green.\n\nNote: Lines with ? are optional.\n\n    at Ai.validate (/Users/leifetter/Github/findai-backend-ts/node_modules/@prisma/client/runtime/library.js:144:73)\n    at un.createMessage (/Users/leifetter/Github/findai-backend-ts/node_modules/@prisma/client/runtime/library.js:161:1298)\n    at /Users/leifetter/Github/findai-backend-ts/node_modules/@prisma/client/runtime/library.js:174:10818\n    at Object.runInChildSpan (/Users/leifetter/Github/findai-backend-ts/node_modules/@prisma/client/runtime/library.js:171:1343)\n    at t._executeRequest (/Users/leifetter/Github/findai-backend-ts/node_modules/@prisma/client/runtime/library.js:174:10795)","clientVersion":"4.14.0"},"msg":"\nInvalid `prisma.user.update()` invocation in\n/Users/leifetter/Github/findai-backend-ts/src/controllers/tool-controller.ts:213:23\n\n  210 }\n  211 const user: User = res.locals.user.id;\n  212 console.log(user);\n→ 213 await prisma.user.update({\n        where: {\n      ?   id?: Int,\n      ?   email?: String\n        },\n        data: {\n          bookmarkedTools: {\n            connect: {\n              id: 'rec4WbTokIvLkzzaS'\n            }\n          }\n        }\n      })\n\nArgument where of type UserWhereUniqueInput needs at least one argument. Available args are listed in green.\n\nNote: Lines with ? are optional.\n"}
+{"level":30,"time":1684839318465,"pid":2815,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684839318465,"pid":2815,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684839318465,"pid":2815,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684839318465,"pid":2815,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684839321322,"pid":2888,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684839321323,"pid":2888,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684839321323,"pid":2888,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684839321323,"pid":2888,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684839369056,"pid":3004,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684839369057,"pid":3004,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684839369057,"pid":3004,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684839369057,"pid":3004,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684865263103,"pid":18676,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684865263103,"pid":18676,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684865263103,"pid":18676,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684865263103,"pid":18676,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684868649247,"pid":22757,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684868649247,"pid":22757,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684868649247,"pid":22757,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684868649247,"pid":22757,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684869995773,"pid":24554,"hostname":"Leifs-MacBook-Pro-2.local","msg":"Server started at port 5859"}
+{"level":30,"time":1684870265906,"pid":25070,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684870265906,"pid":25070,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684870265906,"pid":25070,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684870265906,"pid":25070,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684870390385,"pid":25353,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684870390385,"pid":25353,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684870390385,"pid":25353,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684870390385,"pid":25353,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684871238472,"pid":26614,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684871238472,"pid":26614,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684871238472,"pid":26614,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684871238472,"pid":26614,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684871274745,"pid":26829,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
+{"level":30,"time":1684871274745,"pid":26829,"hostname":"Leifs-MacBook-Pro-2.local","msg":"======= ENV: development ======="}
+{"level":30,"time":1684871274745,"pid":26829,"hostname":"Leifs-MacBook-Pro-2.local","msg":"🚀 App listening on the port 5859"}
+{"level":30,"time":1684871274745,"pid":26829,"hostname":"Leifs-MacBook-Pro-2.local","msg":"================================="}
