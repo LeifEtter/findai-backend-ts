@@ -1,4 +1,5 @@
 import https from "https";
+import http from "http";
 import * as dotenv from "dotenv";
 dotenv.config();
 import cors from "cors";
@@ -57,6 +58,10 @@ if (!process.env.NODE_ENV) {
   };
 
   https.createServer(options, app).listen(process.env.PORT, () => {
+    logger.info(`Server started at port ${process.env.PORT}`);
+  });
+} else if (process.env.NODE_ENV == "test") {
+  http.createServer(app).listen(process.env.PORT, () => {
     logger.info(`Server started at port ${process.env.PORT}`);
   });
 } else if (process.env.NODE_ENV == "development") {
