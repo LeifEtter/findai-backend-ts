@@ -9,6 +9,7 @@ import {
 } from "../helpers/conversion";
 import logger from "../logger";
 import { fetchToolsFromAirtable } from "./airtable-controller";
+import { User } from "@prisma/client";
 dotenv.config();
 
 const unsyncTools = async () => {
@@ -168,6 +169,65 @@ const updateSingleToolById = async (req: Request, res: Response) => {
   }
 };
 
+const unbookmarkTool = async (req: Request, res: Response) => {
+  try {
+    const tool = await prisma.tool.findUnique({ where: { id: req.params.id } });
+    if (!tool) {
+      return res
+        .status(400)
+        .send({ message: "No tool with that id could be found" });
+    }
+
+    const user: User = res.locals.user;
+    await prisma.user.update({
+      where: { id: user.id },
+      data: {
+        bookmarkedTools: {
+          disconnect: {
+            id: req.params.id,
+          },
+        },
+      },
+    });
+    return res
+      .status(201)
+      .send({ message: "Tool successfully removed from bookmarks" });
+  } catch (error) {
+    logger.error(error);
+    return res
+      .status(500)
+      .send({ message: "Something went wrong while trying to bookmark tool" });
+  }
+};
+
+const bookmarkTool = async (req: Request, res: Response) => {
+  try {
+    const tool = await prisma.tool.findUnique({ where: { id: req.params.id } });
+    if (!tool) {
+      return res
+        .status(400)
+        .send({ message: "No tool with that id could be found" });
+    }
+    const user: User = res.locals.user;
+    await prisma.user.update({
+      where: { id: user.id },
+      data: {
+        bookmarkedTools: {
+          connect: {
+            id: req.params.id,
+          },
+        },
+      },
+    });
+    return res.status(201).send({ message: "Tool successfully bookmarked" });
+  } catch (error) {
+    logger.error(error);
+    return res
+      .status(500)
+      .send({ message: "Something went wrong while trying to bookmark tool" });
+  }
+};
+
 export {
   syncTools,
   syncToolsWithAirtable,
@@ -175,4 +235,6 @@ export {
   getToolsByQuery,
   deleteSingleToolById,
   updateSingleToolById,
+  bookmarkTool,
+  unbookmarkTool,
 };
