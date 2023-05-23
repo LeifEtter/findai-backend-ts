@@ -3,13 +3,13 @@ import pino from "pino";
 const logger = pino({
   transport: {
     targets: [
-      {
-        level: "trace",
-        target: "pino/file",
-        options: {
-          destination: "./src/logs/file.log",
-        },
-      },
+      // {
+      //   level: "trace",
+      //   target: "pino/file",
+      //   options: {
+      //     destination: "./src/logs/file.log",
+      //   },
+      // },
       {
         level: "trace",
         target: "pino-pretty",
