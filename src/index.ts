@@ -61,7 +61,7 @@ if (!process.env.NODE_ENV) {
     logger.info(`Server started at port ${process.env.PORT}`);
   });
 } else if (process.env.NODE_ENV == "test") {
-  http.createServer(app).listen(process.env.PORT, () => {
+  https.createServer(app).listen(process.env.PORT, () => {
     logger.info(`Server started at port ${process.env.PORT}`);
   });
 } else if (process.env.NODE_ENV == "development") {
