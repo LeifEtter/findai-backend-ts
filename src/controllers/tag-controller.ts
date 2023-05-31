@@ -79,4 +79,18 @@ const getTag = async (req: Request, res: Response) => {
   }
 };
 
-export { syncTags, syncTagsWithAirtable, getTag };
+const getAllTags = async (req: Request, res: Response) => {
+  try {
+    const tags = await prisma.tag.findMany({
+      include: {
+        tools: true,
+      },
+    });
+    return res.status(200).send({ tags });
+  } catch (error) {
+    logger.error(error);
+    return res.status(500).send({ message: "Couldn't get all tags" });
+  }
+};
+
+export { syncTags, syncTagsWithAirtable, getTag, getAllTags };
