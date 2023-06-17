@@ -10,7 +10,8 @@ import api from "./router";
 import cookieParser from "cookie-parser";
 import logger from "./logger";
 
-const allowedOrigins: string[] = [process.env.CURRENT_URL ?? "*"];
+// const allowedOrigins: string[] = [process.env.CURRENT_URL ?? "*"];
+const allowedOrigins: string[] = ["localhost:3000", "http://localhost:3000"];
 const corsOptions: cors.CorsOptions = {
   origin: allowedOrigins,
 };
