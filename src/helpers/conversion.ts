@@ -41,4 +41,18 @@ const convertOrderQueryToOrderObject = (
   }
 };
 
-export { convertQueryToList, convertOrderQueryToOrderObject };
+const alterRequestQueryToUseArrays = (queryObject: QueryString.ParsedQs) => {
+  Object.keys(queryObject).forEach((key: string) => {
+    const param = queryObject[key as keyof QueryString.ParsedQs];
+    if (typeof param === "string" && param.includes(",")) {
+      queryObject[key as keyof QueryString.ParsedQs] = param.split(",");
+    }
+  });
+  return queryObject;
+};
+
+export {
+  convertQueryToList,
+  convertOrderQueryToOrderObject,
+  alterRequestQueryToUseArrays,
+};
