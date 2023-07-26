@@ -6,6 +6,7 @@ import { MetaData, getMetaDataForUrl } from "../helpers/scraping";
 import {
   convertOrderQueryToOrderObject,
   convertQueryToList,
+  alterRequestQueryToUseArrays,
 } from "../helpers/conversion";
 import logger from "../logger";
 import { fetchToolsFromAirtable } from "./airtable-controller";
@@ -115,8 +116,9 @@ const getSingleToolById = async (req: Request, res: Response) => {
 
 const getToolsByQuery = async (req: Request, res: Response) => {
   try {
+    req.query = alterRequestQueryToUseArrays(req.query);
+
     const tags = convertQueryToList(req.query.tag);
-    console.log(tags);
     const order: string | undefined = req.query.sort as string | undefined;
 
     let some: object = {};
