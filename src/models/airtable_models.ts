@@ -24,4 +24,20 @@ interface AirtableTagFields {
   name: string;
 }
 
-export { AirtableTool, AirtableToolFields, AirtableTag, AirtableTagFields };
+interface AirtableCategory {
+  id: string;
+  createdTime: string;
+  fields: AirtableCategoryFields;
+}
+interface AirtableCategoryFields {
+  name: string;
+}
+
+export {
+  AirtableTool,
+  AirtableToolFields,
+  AirtableTag,
+  AirtableTagFields,
+  AirtableCategory,
+  AirtableCategoryFields,
+};
