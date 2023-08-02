@@ -7,12 +7,6 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Category {
-  id    Int    @id @default(autoincrement())
-  name  String @unique
-  tools Tool[]
-}
-
 model Environment {
   id    Int    @id @default(autoincrement())
   name  String
@@ -90,6 +84,14 @@ model Review {
 }
 
 model Tag {
+  id           String   @id
+  name         String   @unique
+  tools        Tool[]
+  synced       Boolean  @default(false)
+  creationDate DateTime @default(now())
+}
+
+model Category {
   id           String   @id
   name         String   @unique
   tools        Tool[]
