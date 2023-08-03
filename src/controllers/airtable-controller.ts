@@ -1,8 +1,13 @@
 import { Request, Response } from "express";
 import logger from "../logger";
-import { AirtableTag, AirtableTool } from "../models/airtable_models";
+import {
+  AirtableCategory,
+  AirtableTag,
+  AirtableTool,
+} from "../models/airtable_models";
 import { syncTags } from "./tag-controller";
 import { syncTools } from "./tool-controller";
+import { syncCategories } from "./category-controller";
 
 const fetchTagsFromAirtable = async (): Promise<AirtableTag[]> => {
   try {
@@ -44,12 +49,35 @@ const fetchToolsFromAirtable = async (): Promise<AirtableTool[]> => {
   }
 };
 
+const fetchCategoriesFromAirtable = async (): Promise<AirtableCategory[]> => {
+  try {
+    const response = await fetch(
+      `${process.env.AIRTABLE_URL}/${process.env.AIRTABLE_CATEGORY_TABLE_ID}`,
+      {
+        method: "GET",
+        headers: {
+          Accept: "application/json",
+          Authorization: `Bearer ${process.env.AIRTABLE_TOKEN}`,
+        },
+      }
+    );
+    const result = JSON.parse(await response.text());
+    console.log(result.records);
+    return result.records;
+  } catch (error) {
+    logger.error(error);
+    throw new Error("Failed to get data from Airtable");
+  }
+};
+
 const syncTagsAndToolsWithAirtable = async (req: Request, res: Response) => {
   try {
     const tags: AirtableTag[] = await fetchTagsFromAirtable();
     await syncTags(tags);
     const tools: AirtableTool[] = await fetchToolsFromAirtable();
     await syncTools(tools);
+    const categories: AirtableCategory[] = await fetchCategoriesFromAirtable();
+    await syncCategories(categories);
     return res
       .status(200)
       .send({ message: "Successfully synced tags and tools with airtable" });
@@ -65,5 +93,6 @@ const syncTagsAndToolsWithAirtable = async (req: Request, res: Response) => {
 export {
   fetchTagsFromAirtable,
   fetchToolsFromAirtable,
+  fetchCategoriesFromAirtable,
   syncTagsAndToolsWithAirtable,
 };
