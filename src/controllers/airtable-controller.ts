@@ -1,13 +1,13 @@
-import { Request, Response } from "express";
+import {Request, Response} from "express";
 import logger from "../logger";
 import {
   AirtableCategory,
   AirtableTag,
   AirtableTool,
 } from "../models/airtable_models";
-import { syncTags } from "./tag-controller";
-import { syncTools } from "./tool-controller";
-import { syncCategories } from "./category-controller";
+import {syncTags} from "./tag-controller";
+import {syncTools} from "./tool-controller";
+import {syncCategories} from "./category-controller";
 
 const fetchTagsFromAirtable = async (): Promise<AirtableTag[]> => {
   try {
@@ -75,12 +75,13 @@ const syncTagsAndToolsWithAirtable = async (req: Request, res: Response) => {
     const tags: AirtableTag[] = await fetchTagsFromAirtable();
     await syncTags(tags);
     const tools: AirtableTool[] = await fetchToolsFromAirtable();
-    await syncTools(tools);
+    const incompleteTool = await syncTools(tools);
     const categories: AirtableCategory[] = await fetchCategoriesFromAirtable();
     await syncCategories(categories);
-    return res
-      .status(200)
-      .send({ message: "Successfully synced tags and tools with airtable" });
+    return res.status(200).send({
+      message: "Successfully synced tags and tools with airtable",
+      incompleteTool: incompleteTool,
+    });
   } catch (error) {
     logger.error(error);
     return res.status(500).send({
