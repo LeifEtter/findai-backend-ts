@@ -37,48 +37,52 @@ const syncTools = async (tools: AirtableTool[]) => {
     for (const tool of tools) {
       //verify tool fields
       if (!tool.fields.link || !tool.fields.title) {
-        incompleteTool.push({...tool, message: "This tool is incomplete"});
-      }
-      const meta: MetaData = await getMetaDataForUrl(tool.fields.link);
+        incompleteTool.push({
+          ...tool,
+          message: "This tool is incomplete",
+        });
+      } else {
+        const meta: MetaData = await getMetaDataForUrl(tool.fields.link);
 
-      //upsert record
-      await prisma.tool.upsert({
-        where: {
-          url: tool.fields.link,
-        },
-        create: {
-          id: tool.id,
-          url: tool.fields.link,
-          name: tool.fields.title,
-          description:
-            tool.fields.description || meta.description || "No description",
-          price: tool.fields.price,
-          priceModel: tool.fields.priceModel,
-          approval: tool.fields.approval,
-          tags: {
-            connect: tool.fields.tags?.map((id) => ({id: id})),
+        //upsert record
+        await prisma.tool.upsert({
+          where: {
+            url: tool.fields.link,
           },
-          creator: {
-            connect: {
-              id: 1,
+          create: {
+            id: tool.id,
+            url: tool.fields.link,
+            name: tool.fields.title,
+            description:
+              tool.fields.description || meta.description || "No description",
+            price: tool.fields.price,
+            priceModel: tool.fields.priceModel,
+            approval: tool.fields.approval,
+            tags: {
+              connect: tool.fields.tags?.map((id) => ({id: id})),
             },
+            creator: {
+              connect: {
+                id: 1,
+              },
+            },
+            image: meta.image,
+            icon: meta.icon,
+            synced: true,
           },
-          image: meta.image,
-          icon: meta.icon,
-          synced: true,
-        },
-        update: {
-          url: tool.fields.link,
-          name: tool.fields.title,
-          price: tool.fields.price,
-          priceModel: tool.fields.priceModel,
-          approval: tool.fields.approval,
-          tags: {
-            connect: tool.fields.tags?.map((id) => ({id: id})),
+          update: {
+            url: tool.fields.link,
+            name: tool.fields.title,
+            price: tool.fields.price,
+            priceModel: tool.fields.priceModel,
+            approval: tool.fields.approval,
+            tags: {
+              connect: tool.fields.tags?.map((id) => ({id: id})),
+            },
+            synced: true,
           },
-          synced: true,
-        },
-      });
+        });
+      }
 
       // const record: object | null = await prisma.tool.findUnique({
       //   where: {
@@ -127,7 +131,7 @@ const syncTools = async (tools: AirtableTool[]) => {
       //   });
       // }
     }
-    console.log(incompleteTool);
+
     await cleanupUnsyncedTools();
     return incompleteTool;
   } catch (error) {

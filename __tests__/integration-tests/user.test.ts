@@ -7,7 +7,7 @@ import {userInfo} from "os";
 afterAll(
   async () => await prisma.user.delete({where: {email: "ayodeji@test.com"}})
 );
-describe("Testing of the tool routes", () => {
+describe("Testing of the user routes", () => {
   const user = {
     biography: "nothing",
     email: "ayodeji@test.com",
