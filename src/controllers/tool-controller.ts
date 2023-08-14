@@ -114,24 +114,47 @@ const getSingleToolById = async (req: Request, res: Response) => {
   }
 };
 
+// const processQuery = (query: any) => {
+//   if (query.tag == undefined || query.sort == undefined) {
+//     throw new Error("Query is missing parameters such as tag or sort");
+//   } else {
+//     const params: object;
+
+//     if()
+//   }
+// };
+
 const getToolsByQuery = async (req: Request, res: Response) => {
   try {
     req.query = alterRequestQueryToUseArrays(req.query);
 
-    const tags = convertQueryToList(req.query.tag);
-    const order: string | undefined = req.query.sort as string | undefined;
+    const tagsResponse = convertQueryToList(req.query.tag);
+    const categoriesResponse = convertQueryToList(req.query.category);
 
-    let some: object = {};
-    if (tags.length != 0) {
-      some = { OR: tags.map((tag) => ({ name: tag })) };
+    const order: string | undefined = req.query.sort as string | undefined;
+    let tags: object = {};
+    if (tagsResponse && tagsResponse.length != 0) {
+      tags = { OR: tagsResponse.map((tag) => ({ name: tag })) };
     }
+    let categories: object = {};
+    if (categoriesResponse && categoriesResponse.length != 0) {
+      categories = {
+        OR: categoriesResponse.map((category) => ({ name: category })),
+      };
+    }
+
+    console.log(tags);
+    console.log(categories);
 
     const orderBy = convertOrderQueryToOrderObject(order);
 
     const result = await prisma.tool.findMany({
       where: {
         tags: {
-          ...(some && { some: some }),
+          ...(tags && { some: tags }),
+        },
+        categories: {
+          ...(categories && { some: categories }),
         },
       },
       orderBy,
