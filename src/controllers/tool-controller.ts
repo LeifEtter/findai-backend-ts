@@ -33,17 +33,23 @@ const cleanupUnsyncedTools = async () => {
 const syncTools = async (tools: AirtableTool[]) => {
   try {
     await unsyncTools();
+    const incompleteTool = [];
     for (const tool of tools) {
-      const meta: MetaData = await getMetaDataForUrl(tool.fields.link);
-      const record: object | null = await prisma.tool.findUnique({
-        where: {
-          url: tool.fields.link,
-        },
-      });
-      if (record == null) {
-        //TODO Implement skipping empty fields and fields where not all criteria are present
-        await prisma.tool.create({
-          data: {
+      //verify tool fields
+      if (!tool.fields.link || !tool.fields.title) {
+        incompleteTool.push({
+          ...tool,
+          message: "This tool is incomplete",
+        });
+      } else {
+        const meta: MetaData = await getMetaDataForUrl(tool.fields.link);
+
+        //upsert record
+        await prisma.tool.upsert({
+          where: {
+            url: tool.fields.link,
+          },
+          create: {
             id: tool.id,
             url: tool.fields.link,
             name: tool.fields.title,
@@ -64,11 +70,7 @@ const syncTools = async (tools: AirtableTool[]) => {
             icon: meta.icon,
             synced: true,
           },
-        });
-      } else {
-        await prisma.tool.update({
-          where: { url: tool.fields.link },
-          data: {
+          update: {
             url: tool.fields.link,
             name: tool.fields.title,
             price: tool.fields.price,
@@ -81,9 +83,57 @@ const syncTools = async (tools: AirtableTool[]) => {
           },
         });
       }
+
+      // const record: object | null = await prisma.tool.findUnique({
+      //   where: {
+      //     url: tool.fields.link,
+      //   },
+      // });
+      // if (record == null) {
+      //   //TODO Implement skipping empty fields and fields where not all criteria are present
+      //   await prisma.tool.create({
+      //     data: {
+      //       id: tool.id,
+      //       url: tool.fields.link,
+      //       name: tool.fields.title,
+      //       description:
+      //         tool.fields.description || meta.description || "No description",
+      //       price: tool.fields.price,
+      //       priceModel: tool.fields.priceModel,
+      //       approval: tool.fields.approval,
+      //       tags: {
+      //         connect: tool.fields.tags?.map((id) => ({ id: id })),
+      //       },
+      //       creator: {
+      //         connect: {
+      //           id: 1,
+      //         },
+      //       },
+      //       image: meta.image,
+      //       icon: meta.icon,
+      //       synced: true,
+      //     },
+      //   });
+      // } else {
+      //   await prisma.tool.update({
+      //     where: { url: tool.fields.link },
+      //     data: {
+      //       url: tool.fields.link,
+      //       name: tool.fields.title,
+      //       price: tool.fields.price,
+      //       priceModel: tool.fields.priceModel,
+      //       approval: tool.fields.approval,
+      //       tags: {
+      //         connect: tool.fields.tags?.map((id) => ({ id: id })),
+      //       },
+      //       synced: true,
+      //     },
+      //   });
+      // }
     }
+
     await cleanupUnsyncedTools();
-    return;
+    return incompleteTool;
   } catch (error) {
     console.error(error);
     throw new Error("Couldn't sync tools");
@@ -93,9 +143,12 @@ const syncTools = async (tools: AirtableTool[]) => {
 const syncToolsWithAirtable = async (req: Request, res: Response) => {
   try {
     const tools: AirtableTool[] = await fetchToolsFromAirtable();
-    await syncTools(tools);
+    const incompleteTool = await syncTools(tools);
     //TODO Implement rescraping if this is passed in query
-    return res.status(200).send({ message: "Synced Successfully" });
+    return res.status(200).send({
+      message: "Successfully synced tools with airtable",
+      incompleteTool,
+    });
   } catch (error) {
     logger.error(error);
     throw new Error("Couldn't Sync Airtable Data with Database");

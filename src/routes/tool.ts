@@ -11,10 +11,12 @@ import {
 import checkValid from "../helpers/validation";
 import val from "../helpers/validator-schemas";
 import auth from "../helpers/authentication";
+import minRole from "../helpers/authorization";
+import {Role} from "@prisma/client";
 
 const toolRouter: express.Router = express.Router();
 
-toolRouter.route("/sync").get(syncToolsWithAirtable);
+toolRouter.route("/sync").get(auth, minRole(Role.ADMIN), syncToolsWithAirtable);
 toolRouter.route("/bookmark/:id").patch(auth, bookmarkTool);
 toolRouter.route("/unbookmark/:id").patch(auth, unbookmarkTool);
 toolRouter.route("/").get(getToolsByQuery);

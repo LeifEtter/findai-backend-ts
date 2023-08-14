@@ -1,4 +1,5 @@
 import * as cheerio from "cheerio";
+import logger from "../logger";
 
 interface MetaData {
   title?: string;
@@ -40,8 +41,9 @@ const getMetaDataForUrl = async (url: string): Promise<MetaData> => {
       icon: icon,
     };
   } catch (error) {
+    logger.error(error);
     throw new Error("Can't get metadata");
   }
 };
 
-export { getMetaDataForUrl, MetaData };
+export {getMetaDataForUrl, MetaData};
