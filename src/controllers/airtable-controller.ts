@@ -74,10 +74,11 @@ const syncTagsAndToolsWithAirtable = async (req: Request, res: Response) => {
   try {
     const tags: AirtableTag[] = await fetchTagsFromAirtable();
     await syncTags(tags);
-    const tools: AirtableTool[] = await fetchToolsFromAirtable();
-    await syncTools(tools);
     const categories: AirtableCategory[] = await fetchCategoriesFromAirtable();
     await syncCategories(categories);
+    const tools: AirtableTool[] = await fetchToolsFromAirtable();
+    await syncTools(tools);
+
     return res
       .status(200)
       .send({ message: "Successfully synced tags and tools with airtable" });
