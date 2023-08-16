@@ -1,5 +1,6 @@
 interface AirtableToolFields {
   tags?: string[];
+  categories?: string[];
   approval: boolean;
   link: string;
   price: number;

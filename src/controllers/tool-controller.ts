@@ -61,6 +61,9 @@ const syncTools = async (tools: AirtableTool[]) => {
             tags: {
               connect: tool.fields.tags?.map((id) => ({ id: id })),
             },
+            categories: {
+              connect: tool.fields.categories?.map((id) => ({ id: id })),
+            },
             creator: {
               connect: {
                 id: 1,
@@ -78,6 +81,9 @@ const syncTools = async (tools: AirtableTool[]) => {
             approval: tool.fields.approval,
             tags: {
               connect: tool.fields.tags?.map((id) => ({ id: id })),
+            },
+            categories: {
+              connect: tool.fields.categories?.map((id) => ({ id: id })),
             },
             synced: true,
           },
@@ -195,9 +201,6 @@ const getToolsByQuery = async (req: Request, res: Response) => {
         OR: categoriesResponse.map((category) => ({ name: category })),
       };
     }
-
-    console.log(tags);
-    console.log(categories);
 
     const orderBy = convertOrderQueryToOrderObject(order);
 
